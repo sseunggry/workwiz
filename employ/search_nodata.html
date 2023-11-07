@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<!-- mob에서 color 들어갈 경우 wrap에 bg-color 클래스 추가  -->
+<div class="wrap bg-color">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents employ">
+        <div class="page-tit ta-left">
+            <h2>채용관</h2>
+            <p class="desc">4050채용소식만 살펴보고 <br class="mo_only"/> 빠르게 재취업에 성공하세요.</p>
+        </div>
+
+        <div class="employ-filter">
+            <div class="left pc_only">
+                <div class="inp-select">
+                    <button class="inp-btn">
+                        <span class="label">직무</span>
+                        <span class="value">전체</span>
+                    </button>
+                    <div class="inp-options inp-radio">
+                        <p class="inp-tit">직무</p>
+                        <ul class="inp-radio-list type3">
+                            <li class="inp-radio full">
+                                <input type="radio" id="radioJob1" name="radioJob" checked>
+                                <label for="radioJob1" class="inp-label">전체</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob2" name="radioJob">
+                                <label for="radioJob2" class="inp-label">기획</label>
+                            </li>   
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob3" name="radioJob">
+                                <label for="radioJob3"  class="inp-label">재무·회계</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob4" name="radioJob">
+                                <label for="radioJob4"  class="inp-label">영업·마케팅</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob5" name="radioJob">
+                                <label for="radioJob5"  class="inp-label">인사·노무</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob6" name="radioJob">
+                                <label for="radioJob6"  class="inp-label">사무·총무</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob7" name="radioJob">
+                                <label for="radioJob7"  class="inp-label">IT·웹통신</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob8" name="radioJob">
+                                <label for="radioJob8"  class="inp-label">판매·유통</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob9" name="radioJob">
+                                <label for="radioJob9"  class="inp-label">교육·상담</label>
+                            </li>
+                            <li class="inp-radio">
+                                <input type="radio" id="radioJob10" name="radioJob">
+                                <label for="radioJob10" class="inp-label">기타</label>
+                            </li>
+                        </ul>
+                        <div class="btn-group end pb-0">
+                            <button type="button" class="btn text-m">초기화</button>
+                            <button type="button" class="btn bg-black btn-m square">선택 완료</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp-select">
+                    <button class="inp-btn">
+                        <span class="label">근무지역</span>
+                        <span class="value">전체</span>
+                    </button>
+                    <div class="inp-options">
+                        <p class="inp-tit">근무지역</p>
+                        <div class="region-select">
+                            <div class="city">
+                                <p class="sub-tit">지역</p>
+                                <ul class="inp-btn-list">
+                                    <li class="active"><button type="button">서울</button></li>
+                                    <li><button type="button">부산</button></li>
+                                    <li><button type="button">대구</button></li>
+                                    <li><button type="button">인천</button></li>
+                                    <li><button type="button">광주</button></li>
+                                    <li><button type="button">대전</button></li>
+                                    <li><button type="button">울산</button></li>
+                                    <li><button type="button">경기</button></li>
+                                    <li><button type="button">경기</button></li>
+                                </ul>
+                            </div>
+                            <div class="district">
+                                <p class="sub-tit">상세 지역</p>
+                                <ul class="inp-checkbox-list type2">
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict1" name="radioDistrict">
+                                        <label for="radioDistrict1" class="inp-label">전체</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict2" name="radioDistrict">
+                                        <label for="radioDistrict2"  class="inp-label">강남구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict3" name="radioDistrict">
+                                        <label for="radioDistrict3"  class="inp-label">강동구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict4" name="radioDistrict">
+                                        <label for="radioDistrict4"  class="inp-label">강북구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict5" name="radioDistrict">
+                                        <label for="radioDistrict5"  class="inp-label">강서구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict6" name="radioDistrict">
+                                        <label for="radioDistrict6"  class="inp-label">관악구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict7" name="radioDistrict">
+                                        <label for="radioDistrict7"  class="inp-label">광진구</label>
+                                    </li>
+                                    <li class="inp-checkbox">
+                                        <input type="checkbox" id="radioDistrict8" name="radioDistrict">
+                                        <label for="radioDistrict8"  class="inp-label">구로구</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="region-select-list">
+                            <p class="sub-tit">선택한 지역 <strong class="c-blue">5</strong></p>
+                            <ul class="tag-list">
+                                <li>
+                                    서울 강남구 <button type="button" class="btn-delete"></button>
+                                </li>
+                                <li>
+                                    서울 강동구 <button type="button" class="btn-delete"></button>
+                                </li>
+                                <li>
+                                    서울 강북구 <button type="button" class="btn-delete"></button>
+                                </li>
+                                <li>
+                                    서울 강서구 <button type="button" class="btn-delete"></button>
+                                </li>
+                                <li>
+                                    서울 관악구 <button type="button" class="btn-delete"></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group end pb-0">
+                            <button type="button" class="btn text-m">초기화</button>
+                            <button type="button" class="btn bg-black btn-m square">선택 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left mo_only">
+                <div class="inp-select" onclick="popupOpenFn('employ-job-filter')">
+                    <button class="inp-btn">
+                        <span class="label">직무</span>
+                        <span class="value">전체</span>
+                    </button>
+                </div>
+                <div class="inp-select" onclick="popupOpenFn('employ-region-filter')">
+                    <button class="inp-btn">
+                        <span class="label">근무지역</span>
+                        <span class="value">전체</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="search active">
+                    <i class="icon icon-search size-m"></i>
+                    <input type="text" placeholder="기업, 공고 키워드를 검색해 보세요." />
+                    <button type="button" class="btn-delete"></button>
+                    <button type="button" class="btn-close mo_only"></button>
+                </div>
+                <div class="inp-select text pc_only">
+                    <button class="inp-btn">
+                        <span class="value">최신순</span>
+                    </button>
+                    <ul class="inp-options">
+                        <li class="option">최신순</li>
+                        <li class="option">마감순</li>
+                    </ul>
+                </div>
+                <div class="inp-select text mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('select_01')">
+                        <span class="value">최신순</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="no-data">
+            <p class="txt">
+                검색 조건에 해당하는 <br/>
+                채용공고가 없습니다.
+            </p>
+        </div>
+    </div>
+    <!-- // contents -->
+
+    <!-- pop content -->
+    <div class="pop-wrap select-pop" data-pop="select_01">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">최신순</li>
+                <li class="option">마감순</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select_01')">취소</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap bottom-sheet" data-pop="employ-job-filter">
+        <div class="pop-inner">
+            <h3 class="pop-tit">직무</h3>
+            <div class="employ-filter">
+                <div class="inp-options inp-radio">
+                    <ul class="inp-radio-list type3">
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob1" name="mo_radioJob" checked>
+                            <label for="mo_radioJob1" class="inp-label">전체</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob2" name="mo_radioJob">
+                            <label for="mo_radioJob2" class="inp-label">기획</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob3" name="mo_radioJob">
+                            <label for="mo_radioJob3"  class="inp-label">재무·회계</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob4" name="mo_radioJob">
+                            <label for="mo_radioJob4"  class="inp-label">영업·마케팅</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob5" name="mo_radioJob">
+                            <label for="mo_radioJob5"  class="inp-label">인사·노무</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob6" name="mo_radioJob">
+                            <label for="mo_radioJob6"  class="inp-label">사무·총무</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob7" name="mo_radioJob">
+                            <label for="mo_radioJob7"  class="inp-label">IT·웹통신</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob8" name="mo_radioJob">
+                            <label for="mo_radioJob8"  class="inp-label">판매·유통</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob9" name="mo_radioJob">
+                            <label for="mo_radioJob9"  class="inp-label">교육·상담</label>
+                        </li>
+                        <li class="inp-radio">
+                            <input type="radio" id="mo_radioJob10" name="mo_radioJob">
+                            <label for="mo_radioJob10" class="inp-label">기타</label>
+                        </li>
+                    </ul>
+                    <!--                    <div class="btn-group row pb-0">-->
+                    <!--                        <button type="button" class="btn full bg-black btn-l square">선택 완료</button>-->
+                    <!--                        <button type="button" class="btn text-m">초기화</button>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+            <div class="btn-group row pb-0">
+                <button type="button" class="btn full bg-black btn-l square" onclick="popupCloseFn('employ-job-filter')">선택 완료</button>
+                <button type="button" class="btn text-m">초기화</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap bottom-sheet" data-pop="employ-region-filter">
+        <div class="pop-inner">
+            <h3 class="pop-tit">근무지역</h3>
+            <div class="employ-filter">
+                <div class="inp-options">
+                    <div class="region-select">
+                        <div class="city">
+                            <p class="sub-tit">지역</p>
+                            <ul class="inp-btn-list">
+                                <li class="active"><button type="button">서울</button></li>
+                                <li><button type="button">부산</button></li>
+                                <li><button type="button">대구</button></li>
+                                <li><button type="button">인천</button></li>
+                                <li><button type="button">광주</button></li>
+                                <li><button type="button">대전</button></li>
+                                <li><button type="button">울산</button></li>
+                                <li><button type="button">경기</button></li>
+                                <li><button type="button">경기</button></li>
+                            </ul>
+                        </div>
+                        <div class="district">
+                            <p class="sub-tit">상세 지역</p>
+                            <ul class="inp-checkbox-list type2">
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict1" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict1" class="inp-label">전체</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict2" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict2"  class="inp-label">강남구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict3" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict3"  class="inp-label">강동구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict4" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict4"  class="inp-label">강북구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict5" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict5"  class="inp-label">강서구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict6" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict6"  class="inp-label">관악구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict7" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict7"  class="inp-label">광진구</label>
+                                </li>
+                                <li class="inp-checkbox">
+                                    <input type="checkbox" id="mo_radioDistrict8" name="mo_radioDistrict">
+                                    <label for="mo_radioDistrict8"  class="inp-label">구로구</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="region-select-list">
+                        <p class="sub-tit">선택한 지역 <strong class="c-blue">5</strong></p>
+                        <ul class="tag-list">
+                            <li>
+                                서울 강남구 <button type="button" class="btn-delete"></button>
+                            </li>
+                            <li>
+                                서울 강동구 <button type="button" class="btn-delete"></button>
+                            </li>
+                            <li>
+                                서울 강북구 <button type="button" class="btn-delete"></button>
+                            </li>
+                            <li>
+                                서울 강서구 <button type="button" class="btn-delete"></button>
+                            </li>
+                            <li>
+                                서울 관악구 <button type="button" class="btn-delete"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group row pb-0">
+                <button type="button" class="btn full bg-black btn-l square" onclick="popupCloseFn('employ-region-filter')">선택 완료</button>
+                <button type="button" class="btn text-m">초기화</button>
+            </div>
+        </div>
+    </div>
+    <!-- // pop content -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="select">
+                패밀리사이트
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+</div>
+
+</body>
+</html>

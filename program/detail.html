@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap bg-white">
+    <!-- header -->
+<div class="header fixed">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/content/logo_w.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage_w.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu_w.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage_w.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="employ-wrap">
+        <div class="key-visual">
+            <img src="../assets/img/content/keyVisual_02.jpg" alt="" class="pc_img">
+            <img src="../assets/img/content/mo_keyVisual_02.jpg" alt="" class="mo_img">
+        </div>
+        <div class="contents employ mb-0">
+            <div class="detail-info">
+                <div class="info-box">
+                    <div class="tit-box">
+                        <div class="img-logo">
+                            <img src="../assets/img/content/program_logo.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <span>사회혁신지원</span>
+                            <p>2023 하나 파워 온 세컨드 라이프 교육생 모집</p>
+                        </div>
+                    </div>
+                    <div class="info-list">
+                        <div class="default-info">
+                            <dl>
+                                <dt>일시</dt>
+                                <dd class="tag">2023.10.10 ~ 2023.12.10</dd>
+                            </dl>
+                            <dl>
+                                <dt>신청</dt>
+                                <dd class="tag">10월 05일(목) 15:30 ~ 10월 31일(화) 23:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>비용</dt>
+                                <dd class="tag">무료</dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd class="tag">경기 화성시 분당읍 와우안길 17 미래혁신관 2층</dd>
+                            </dl>
+                        </div>
+                        <div class="add-info">
+                            <!-- 웹에디터 작성 영역 -->
+
+                            <p class="tit">프로그램 소개</p>
+                            <p class="desc">상상우리가 주최하는 <strong class="c-black bold">&quot;기업퇴직자 사회공헌 뉴스타트&quot;</strong> 를 소개합니다.</p>
+                            <p class="desc">
+                                관심 직무도 정했고, 의지도 충분한데 어떤 것을 준비해야 할 지
+                                목표 설정이 어려우신 분들을 위해
+                                100여개의 기획 실무 프로젝트 운영 노하우와
+                                상상우리 현직자 멘토님들의 조언을 꾹꾹 담아 전달해드립니다.
+                            </p>
+                            <p class="desc">
+                                10일 동안 농사짓는 마음으로 미션 수행하고
+                                예비 취업자들의 결과물을 공유할 수 있는 커뮤니티에 함께해보세요!
+                            </p>
+                            <img src="../assets/img/content/program_detail_01.png" alt="" class="pc_only">
+                            <img src="../assets/img/content/mo_program_detail_01.png" alt="" class="mo_only">
+
+                            <hr class="hr">
+
+                            <p class="tit">신청대상</p>
+                            <p class="desc">전국 <strong class="c-black bold">강소기업 및 디지털일자리</strong>로 취업을 희망 하는 4050 중장년</p>
+
+                            <hr class="hr">
+
+                            <p class="tit">프로세스</p>
+                            <p class="desc">
+                                <span class="c-black">2023년 7월 10일(월) ~ 10월</span> <em class="c-blue">상시모집</em> <br/>
+                                ( 접수시점에 따라 전화 선발 후 기수 배정 )
+                            </p>
+                            <img src="../assets/img/content/program_detail_02.png" alt="" class="pc_only">
+                            <img src="../assets/img/content/mo_program_detail_02.png" alt="" class="mo_only">
+
+                            <hr class="hr">
+
+                            <p class="tit">교육특전</p>
+                            <ul>
+                                <li>✔️ 4050 중장년 맞춤형 재취업 역량강화 교육 제공</li>
+                                <li>✔️ 디지털 일자리 프로그램 제공</li>
+                                <li>✔️ 1:1 전담 컨설턴트 배정</li>
+                                <li>✔️ 취업 연계 및 후속 서비스 제공</li>
+                                <li>✔️ <span class="c-blue">교통비 및 취업축하금 지원</span></li>
+                            </ul>
+
+                            <hr class="hr">
+
+                            <p class="tit">교육안내</p>
+
+                            <!-- //웹에디터 작성 영역 -->
+                        </div>
+                        <div class="inquiry">
+                            <p class="tit">담당자에게 문의해 보세요.</p>
+                            <div class="txt-box">
+                                <div class="img-box">
+                                    <img src="../assets/img/content/mypage_user.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <p class="name">
+                                        하나 파워 온 세컨드 라이프 운영 사무국
+                                    </p>
+                                    <p class="desc"><a href="tel:02-775-3352">02-775-3352</a></p>
+                                    <p class="desc"><a href="mailto:hana2nd@sangsangwoori.com"></a>hana2nd@sangsangwoori.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruit-btn">
+                    <!--  모집 상태 -->
+                    <div class="txt-box">
+                        <p>모집 상태</p>
+                        <strong>12일 00:00</strong>
+                        <span class="badge small bg-blue">D-2</span>
+                    </div>
+                    <div class="txt-box">
+                        <p>모집 형태</p>
+                        <strong>선착순 모집</strong>
+                    </div>
+                    <div class="btn-group row">
+                        <button type="button" class="btn btn-l bg-primary square">지원하기</button>
+                        <button type="button" class="btn btn-l line c-primary square">공유하기</button>
+                    </div>
+                    <!--  //모집 상태 -->
+
+                    <!--  모집 마감 상태 -->
+                    <!--
+                    <div class="txt-box">
+                        <p>모집 상태</p> -->
+                        <!-- bg-gray 클래스 추가 -->
+                        <!-- <span class="badge small bg-gray">마감</span>
+                    </div>
+                    -->
+                    <!--
+                    <div class="btn-group row"> -->
+                        <!-- disabled 클래스 추가 -->
+                        <!-- <button type="button" class="btn btn-l bg-primary square disabled">지원하기</button>
+                        <button type="button" class="btn btn-l line c-primary square">공유하기</button>
+                    </div>
+                    -->
+                    <!--  //모집 마감 상태 -->
+
+                    <!--  작성된 이력서가 없을 경우 -->
+                    <!--
+                    <div class="txt-box">
+                        <p>모집 상태</p>
+                        <strong>12일 00:00</strong>
+                        <span class="badge small bg-blue">D-2</span>
+                    </div>
+                    <div class="btn-group row">
+                        <button type="button" class="btn btn-l line c-primary square">이력서 작성하기</button>
+                    </div>
+                    -->
+                    <!--  //작성된 이력서가 없을 경우 -->
+
+                    <!--  작성된 이력서가 있을 경우 -->
+                    <!--
+                    <div class="txt-box">
+                        <p>모집 상태</p>
+                        <strong>12일 00:00</strong>
+                        <span class="badge small bg-blue">D-2</span>
+                    </div>
+                    <div class="inp-select pc_only">
+                        <button class="inp-btn">
+                            <span class="placeholder">이력서를 선택해 주세요.</span>
+                        </button>
+                        <div class="inp-options">
+                            <ul class="inp-options-list">
+                                <li class="option">김워크 이력서 01</li>
+                                <li class="option">김워크 이력서 02</li>
+                                <li class="option">김워크 이력서 03</li>
+                            </ul>
+                            <button type="button" class="btn text btn-write">
+                                <span>새로운 이력서 작성하기</span> <i class="icon icon-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inp-select mo_only">
+                        <button class="inp-btn" onclick="popupOpenFn('select_01')">
+                            <span class="placeholder">이력서를 선택해 주세요.</span>
+                        </button>
+                    </div>
+                    <div class="btn-group row">
+                        <button type="button" class="btn btn-l bg-primary square disabled">지원하기</button>
+                    </div>
+                    -->
+                    <!--  //작성된 이력서가 있을 경우 -->
+            </div>
+            </div>
+        </div>
+        <div class="recommend-info bg-gray">
+            <div class="inner">
+                <div class="sub-tit ta-center mb-4">
+                    <h2 class="tit">추천 채용공고</h2>
+                </div>
+                <div class="employ-list">
+                    <div class="item">
+                        <a href="#!">
+                            <div class="img-box">
+                                <!-- badge 마감기한 D-10 이내 표기: bg-blue 클래스 추가, 채용 기간 표기: bg-black 클래스 추가, 마감 표기: bg-gary 클래스 추가 -->
+                                <span class="badge small bg-blue">D-2</span>
+                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <p class="sort">중견기업</p>
+                                <p class="tit">워크위즈 UX/UI 프로덕트 기획자 채용</p>
+                                <div class="desc">
+                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
+                                    <p>출처 : <em>잡코리아</em></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#!">
+                            <div class="img-box">
+                                <span class="badge small bg-blue">D-2</span>
+                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <p class="sort">중견기업</p>
+                                <p class="tit">MG새마을금고 데이터분석가 채용</p>
+                                <div class="desc">
+                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
+                                    <p>출처 : <em>잡코리아</em></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#!">
+                            <div class="img-box">
+                                <span class="badge small bg-black">~12.30</span>
+                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <p class="sort">중견기업</p>
+                                <p class="tit">장비개발기업 개발 QA 그룹장 채용</p>
+                                <div class="desc">
+                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
+                                    <p>출처 : <em>잡코리아</em></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn line btn-m bg-white">
+                        <i class="icon icon-plus"></i> <span>더보기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // contents -->
+
+    <!-- pop content -->
+    <div class="pop-wrap select-pop" data-pop="select_01">
+        <div class="pop-inner">
+            <div class="inp-options">
+                <ul class="inp-options-list">
+                    <li class="option">김워크 이력서 01</li>
+                    <li class="option">김워크 이력서 02</li>
+                    <li class="option">김워크 이력서 03</li>
+                </ul>
+                <button type="button" class="btn text btn-write">
+                    <span>새로운 이력서 작성하기</span> <i class="icon icon-plus"></i>
+                </button>
+            </div>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select_01')">취소</button>
+            </div>
+        </div>
+    </div>
+    <!-- //pop content -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="select">
+                패밀리사이트
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+</div>
+
+</body>
+</html>

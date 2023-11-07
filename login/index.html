@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+        <!-- contents -->
+        <div class="contents login full">
+            <div class="content-box pd-xs bg-none">
+                <div class="white-box">
+                    <div class="sub-tit">
+                        <h2 class="tit">로그인</h2>
+                    </div>
+                    <div class="inp-list">
+                        <!-- 에러메시지 노출 시 error 클래스 추가 -->
+                        <div class="inp error">
+                            <label class="inp-label blind">아이디(이메일)</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="아이디(이메일)">
+                                </div>
+                            </div>
+                            <p class="desc-error">입력된 아이디를 확인해 주세요.</p>
+                        </div>
+                        <div class="inp">
+                            <label class="inp-label blind">비밀번호</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="비밀번호">
+                                </div>
+                            </div>
+                            <p class="desc-error">입력된 비밀번호를 확인해 주세요.</p>
+                        </div>
+                        <div class="inp-checkbox">
+                            <input type="checkbox" name="" id="chk01">
+                            <label for="chk01" class="inp-label">
+                                <span class="inp-checkbox-text">로그인 상태 유지</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn-group row">
+                        <button type="button" class="btn bg-primary btn-l square full">로그인</button>
+                        <button type="button" class="btn line btn-l square full">회원가입</button>
+                    </div>
+                    <div class="sns-login">
+                        <p class="txt">
+                            SNS로 간편하게 로그인하고 <br/> 더 많은 서비스를 즐겨보세요!
+                        </p>
+                        <ul class="sns-list">
+                            <li class="kakao"><a href="#!">카카오</a></li>
+                            <li class="naver"><a href="#!">네이버</a></li>
+                            <li class="facebook"><a href="#!">페이스북</a></li>
+                            <li class="google"><a href="#!">Google</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-txt">
+                        <a href="#!" class="btn text-m">계정을 잊으셨나요?</a>
+                        <a href="#!" class="btn text-m">비밀번호를 잊으셨나요?</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <strong>4050커리어 피트니스</strong>
+                    <p class="tit">100일 취업자신감, 워크위즈</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- // contents -->
+
+    </div>
+
+</body>
+</html>

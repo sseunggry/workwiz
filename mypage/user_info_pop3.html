@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body class="popView">
+<div class="wrap">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents full mypage mo-white">
+        <div class="aside">
+    <div class="navi">
+        <ul class="main-link">
+            <!-- main-link li 태그 focus 클래스 추가시 파란 박스 -->
+            <li class="">
+                <a href="#">마이 커리어</a>
+            </li>
+            <li class="focus">
+                <a href="#">개인정보</a>
+                <ul class="sub-link">
+                    <!-- sub-link li 태그 focus 클래스 추가시 텍스트 강조 -->
+                    <li class="active"><a href="#">기본정보</a></li>
+                    <li><a href="#">커리어정보</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육관리</a>
+                <ul class="sub-link">
+                    <li><a href="#">프로그램 관리</a></li>
+                    <li><a href="#">클래스 관리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">커리어</a>
+                <ul class="sub-link">
+                    <li><a href="#">이력서 관리</a></li>
+                    <li><a href="#">취업지원현황</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-con">
+        <a href="#" class="logout-btn">로그아웃</a>
+    </div>
+</div>
+
+        <div class="mypage-con sub-link">
+            <div class="title">
+                <h2 class="page-tit">기본정보</h2>
+            </div>
+
+            <div class="user-info">
+                <div class="user-frm">
+                    <div class="flex-frm">
+                        <dl>
+                            <dt>프로필 이미지</dt>
+                            <dd>
+                                <a href="#" class="user-add"><img src="../assets/img/common/ico_user_add.png" alt=""></a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디(이메일)</dt>
+                            <dd>
+                                <div class="inp disabled">
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" value="workwiz@workwiz.com" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd>
+                                <div class="inp disabled">
+                                    <div class="inp-group no-wrap">
+                                        <div class="inp-area">
+                                            <input type="password" name="" value="⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁" disabled>
+                                        </div>
+                                        <button type="button" class="btn bg-secondary btn-m">변경</button>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>
+                                <div class="inp disabled">
+                                    <div class="inp-group no-wrap">
+                                        <div class="inp-area">
+                                            <input type="text" name="" value="김워크" disabled>
+                                        </div>
+                                        <button type="button" class="btn bg-secondary btn-m">변경</button>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>생년월일</dt>
+                            <dd>
+                                <div class="inp disabled">
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" value="1960.10.10" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰번호</dt>
+                            <dd>
+                                <div class="inp disabled">
+                                    <div class="inp-group no-wrap">
+                                        <div class="inp-area">
+                                            <input type="text" name="" value="010-1234-1234" disabled>
+                                            <span class="badge success">인증완료</span>
+                                        </div>
+                                        <button type="button" class="btn bg-secondary btn-m">변경</button>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="flex-frm terms-frm">
+                        <dl class="ai-s">
+                            <dt>이용약관동의</dt>
+                            <dd>
+                                <div class="inp-checkbox-list">
+                                    <div class="inp-checkbox">
+                                        <input type="checkbox" name="" id="chk01">
+                                        <label for="chk01" class="inp-label">
+                                            <span class="inp-checkbox-text">워크위즈 뉴스레터를 구독합니다.</span>
+                                        </label>
+                                    </div>
+                                    <div class="inp-checkbox">
+                                        <input type="checkbox" name="" id="chk02">
+                                        <label for="chk02" class="inp-label">
+                                            <span class="inp-checkbox-text">취업정보제공 및 헤드헌팅 추천 등 광고성정보수신에 동의합니다.</span>
+                                            <button type="button" class="btn text-m btn-detail">내용보기</button>
+                                        </label>
+                                    </div>
+                                    <div class="inp-checkbox">
+                                        <input type="checkbox" name="" id="chk03">
+                                        <label for="chk03" class="inp-label">
+                                            <span class="inp-checkbox-text">워크위즈의 <span class="c-blue underline">이용약관</span> 및 <span class="c-blue underline">개인정보처리방침</span>에 동의합니다.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="flex-frm leave-frm">
+                    <dl>
+                        <dt>회원탈퇴</dt>
+                        <dd>
+                            <div class="inp-button">
+                                <button type="button">탈퇴하기</button>
+                                <p>워크위즈 탈퇴 시 모든 활동 기록이 영구적으로 삭제됩니다.</p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- // contents -->
+
+</div>
+
+<!-- pop content -->
+<div class="pop-wrap open" id="pop-change-phone">
+    <div class="pop-inner w496">
+        <div class="edit-con">
+            <p class="title">휴대폰번호 변경</p>
+            <p class="sub-txt">
+                휴대폰번호 변경을 위한 인증을 진행해주세요.<br/>
+                인증완료 시 휴대폰번호는 인증된 정보로 갱신됩니다.
+            </p>
+            <div class="page-btn">
+                <button type="button" class="btn bg-black">휴대폰 인증</button>
+            </div>
+        </div>
+        <button type="button" class="close-btn">
+            <img src="../assets/img/common/ico_close.svg" alt="">
+        </button>
+    </div>
+</div>
+<!-- // pop content -->
+
+</body>
+</html>

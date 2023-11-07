@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents full mypage">
+        <div class="aside">
+    <div class="navi">
+        <ul class="main-link">
+            <!-- main-link li 태그 focus 클래스 추가시 파란 박스 -->
+            <li class="">
+                <a href="#">마이 커리어</a>
+            </li>
+            <li class="focus">
+                <a href="#">개인정보</a>
+                <ul class="sub-link">
+                    <!-- sub-link li 태그 focus 클래스 추가시 텍스트 강조 -->
+                    <li class="active"><a href="#">기본정보</a></li>
+                    <li><a href="#">커리어정보</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육관리</a>
+                <ul class="sub-link">
+                    <li><a href="#">프로그램 관리</a></li>
+                    <li><a href="#">클래스 관리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">커리어</a>
+                <ul class="sub-link">
+                    <li><a href="#">이력서 관리</a></li>
+                    <li><a href="#">취업지원현황</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-con">
+        <a href="#" class="logout-btn">로그아웃</a>
+    </div>
+</div>
+
+        <div class="mypage-con">
+            <div class="title">
+                <h2 class="page-tit">마이 커리어</h2>
+                <p>나의 기본 정보와 서비스 활동을 한눈에 볼 수 있어요.</p>
+            </div>
+
+            <div class="mypage-sec">
+                <div class="sub-title">
+                    <h3>나의 정보</h3>
+                    <a href="#" class="util-edit">기본정보 관리</a>
+                </div>
+
+                <div class="info-con">
+                    <dl class="items">
+                        <dt>프로필 이미지</dt>
+                        <dd>
+                            <div class="img-con">
+                                <img src="../assets/img/content/mypage_user.png" alt="">
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="items">
+                        <dt>아이디(이메일)</dt>
+                        <dd>workwiz@workwiz.com</dd>
+                    </dl>
+                    <dl class="items">
+                        <dt>이름</dt>
+                        <dd>김워크</dd>
+                    </dl>
+                    <dl class="items">
+                        <dt>회원등급</dt>
+                        <dd>
+                            <div class="grade silver">
+                                커피회원 <span>Basic</span>
+                                <button type="button" class="info-user" onclick="tooltipOpenFn(this)"><img src="../assets/img/common/ico_info.svg" alt=""></button>
+                                <a href="#" class="util-edit">기본정보 관리</a>
+                                <div class="tooltip-box">
+                                    <div class="tooltip-title">
+                                        <p>회원등급안내</p>
+                                        <button type="button" onclick="tooltipCloseFn(this)"><img src="../assets/img/common/ico_close_gray.svg" alt=""></button>
+                                    </div>
+                                    <div class="tooltip-con">
+                                        <dl>
+                                            <dt>일반회원</dt>
+                                            <dd>- 일반회원 안내 내용이 노출됩니다.</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>커피회원 Basic</dt>
+                                            <dd>- 커피회원 Basic 안내 내용이 노출됩니다.</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>커피회원 Premium</dt>
+                                            <dd>- 커피회원 Premium 안내 내용이 노출됩니다.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="mypage-sec">
+                <div class="sub-title">
+                    <h3>나의 활동</h3>
+                </div>
+
+                <div class="activity-con">
+                    <div class="items">
+                        <dl>
+                            <dt>작성 이력서</dt>
+                            <dd>2</dd>
+                        </dl>
+                        <a href="#" class="util-edit">이력서 관리</a>
+                    </div>
+                    <div class="items">
+                        <dl>
+                            <dt>취업지원현황</dt>
+                            <dd>4</dd>
+                        </dl>
+                        <a href="#" class="util-edit">취업지원현황</a>
+                    </div>
+                    <div class="items">
+                        <dl>
+                            <dt>프로그램 참여 현황</dt>
+                            <dd>2</dd>
+                        </dl>
+                        <a href="#" class="util-edit">프로그램 관리</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mypage-sec">
+                <div class="sub-title">
+                    <h3>나의 커리어피트니스</h3>
+                </div>
+
+                <div class="career-con">
+                    <div class="career-table">
+                        <div class="head">
+                            <ul>
+                                <li>구분</li>
+                                <li>모집명</li>
+                                <li>진행상태</li>
+                                <li>참가비 결제</li>
+                            </ul>
+                        </div>
+                        <div class="career-list">
+                            <ul>
+                                <li>
+                                    <span class="tag gold">프리미엄</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="title">구로구 중장년 일자리 매칭 프로젝트, 4050 커리어피트니스 10월 모집</a>
+                                </li>
+                                <li>
+                                    <span class="stat stat-1">신청완료</span>
+                                </li>
+                                <li>
+                                    <span class="cash">-</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span class="tag silver">베이직</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="title">구로구 중장년 일자리 매칭 프로젝트, 4050 커리어피트니스 10월 모집</a>
+                                </li>
+                                <li>
+                                    <span class="stat stat-2">선발</span>
+                                </li>
+                                <li>
+                                    <span class="cash apply">결제하기</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span class="tag silver">베이직</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="title">구로구 중장년 일자리 매칭 프로젝트, 4050 커리어피트니스 10월 모집</a>
+                                </li>
+                                <li>
+                                    <span class="stat stat-3">계약완료</span>
+                                </li>
+                                <li>
+                                    <span class="cash done">결제완료</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span class="tag silver">베이직</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="title">구로구 중장년 일자리 매칭 프로젝트, 4050 커리어피트니스 10월 모집</a>
+                                </li>
+                                <li>
+                                    <span class="stat stat-4">탈락</span>
+                                </li>
+                                <li>
+                                    <span class="cash">-</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- // contents -->
+
+</div>
+
+</body>
+</html>

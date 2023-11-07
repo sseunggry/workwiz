@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+        <!-- contents -->
+        <div class="contents join full">
+            <div class="content-box pd-xs bg-none">
+                <div class="white-box">
+                    <div class="sub-tit">
+                        <h2 class="tit">회원가입</h2>
+                    </div>
+                    <div class="inp-list">
+                        <div class="inp required">
+                            <label class="inp-label">아이디(이메일)</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="아이디(이메일)을 입력해 주세요.">
+                                    <span class="badge success">확인완료</span>
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+                        <div class="inp required">
+                            <label class="inp-label">비밀번호</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="영문, 숫자, 특수문자 포함 8자 이상 입력해 주세요.">
+                                    <!-- <span class="badge success">안전</span>-->
+                                    <span class="badge fail">사용불가</span>
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+                        <!-- 에러메시지 노출 시 error 클래스 추가, 필수항목일 경우 required 클래스 추가  -->
+                        <div class="inp required error">
+                            <label class="inp-label">비밀번호 확인</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="비밀번호를 한번 더 입력해 주세요.">
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+                        <div class="inp required">
+                            <label class="inp-label">이름</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="이름을 입력해 주세요.">
+                                </div>
+                                <div class="inp-radio-list type2">
+                                    <div class="inp-radio">
+                                        <input type="radio" name="radioBtn" id="radioType2">
+                                        <label for="radioType2" class="inp-label">
+                                            <span class="inp-radio-text">남자</span>
+                                        </label>
+                                    </div>
+                                    <div class="inp-radio">
+                                        <input type="radio" name="radioBtn" id="radioType2_02">
+                                        <label for="radioType2_02" class="inp-label">
+                                            <span class="inp-radio-text">여자</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+                        <!-- [11-03] 텍스트 변경 -->
+                        <div class="inp required">
+                            <label class="inp-label">생년월일</label>
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="YYYY.MM.DD">
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+                        <!-- //[11-03] 텍스트 변경 -->
+                        <div class="inp required">
+                            <label class="inp-label">휴대폰번호</label>
+                            <div class="inp-group no-wrap">
+                                <div class="inp-area">
+                                    <input type="text" name="" placeholder="휴대폰번호를 입력해 주세요." value="010-1234-1234">
+                                    <span class="badge success">인증완료</span>
+                                </div>
+                                <!-- 비활성시 btn에 disabled 클래스 추가-->
+                                <button type="button" class="btn bg-secondary btn-m">인증하기</button>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+
+                        <div class="inp-select">
+                            <p class="inp-label">지역</p>
+                            <button class="inp-btn">
+                                <span class="placeholder">지역을 선택해 주세요.</span>
+                            </button>
+                            <ul class="inp-options">
+                                <li class="option">서울</li>
+                                <li class="option">경기</li>
+                                <li class="option">인천</li>
+                            </ul>
+                        </div>
+
+                        <div class="inp-radio-wrap">
+                            <p class="inp-label">취창업상황</p>
+
+                            <div class="inp-radio-list">
+                                <div class="inp-radio">
+                                    <input type="radio" name="radioBtn" id="radio01" checked>
+                                    <label for="radio01" class="inp-label">
+                                        <span class="inp-radio-text">재직중</span>
+                                    </label>
+                                </div>
+                                <div class="inp-radio">
+                                    <input type="radio" name="radioBtn" id="radio02">
+                                    <label for="radio02" class="inp-label">
+                                        <span class="inp-radio-text">창업중</span>
+                                    </label>
+                                </div>
+                                <div class="inp-radio">
+                                    <input type="radio" name="radioBtn" id="radio03">
+                                    <label for="radio03" class="inp-label">
+                                        <span class="inp-radio-text">취창업준비중</span>
+                                    </label>
+                                </div>
+                                <div class="inp-radio">
+                                    <input type="radio" name="radioBtn" id="radio04">
+                                    <label for="radio04" class="inp-label">
+                                        <span class="inp-radio-text">실업급여수급중</span>
+                                    </label>
+                                </div>
+                                <div class="inp-radio">
+                                    <input type="radio" name="radioBtn" id="radio05">
+                                    <label for="radio05" class="inp-label">
+                                        <span class="inp-radio-text">기타</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="inp-checkbox-list line">
+                        <div class="inp-checkbox">
+                            <input type="checkbox" name="" id="chk01" checked>
+                            <label for="chk01" class="inp-label">
+                                <span class="inp-checkbox-text">워크위즈 뉴스레터를 구독합니다.</span>
+                            </label>
+                        </div>
+                        <div class="inp-checkbox">
+                            <input type="checkbox" name="" id="chk02">
+                            <label for="chk02" class="inp-label">
+                                <span class="inp-checkbox-text">취업정보제공 및 헤드헌팅 추천 등 광고성정보수신에 동의합니다.</span>
+                                <button type="button" class="btn text-m btn-detail">내용보기</button>
+                            </label>
+                        </div>
+                        <div class="inp-checkbox">
+                            <input type="checkbox" name="" id="chk03">
+                            <label for="chk03" class="inp-label">
+                                <span class="inp-checkbox-text">워크위즈의 <span class="c-blue underline">이용약관</span> 및 <span class="c-blue underline">개인정보처리방침</span>에 동의합니다.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="page-btn">
+                        <!-- button 비활성화 시 disabled 클래스 추가 -->
+                        <button type="button" class="btn disabled">가입하기</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // contents -->
+    </div>
+
+</body>
+</html>
