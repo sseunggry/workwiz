@@ -672,6 +672,44 @@ body.popView {
 	border-bottom: 3px solid #3575F6;
 }
 
+.tab-round li {
+	margin-right: 12px;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+}
+
+.tab-round li:last-child {
+	margin-right: 0;
+}
+
+.tab-round li button {
+	padding: 8px 16px 8px 8px;
+	font-size: 16px;
+	border-radius: 24px;
+	background-color: #fff;
+	white-space: nowrap;
+}
+
+.tab-round li.active button {
+	font-weight: 700;
+	color: #fff;
+	background-color: #141618;
+}
+
+.tab-round .tab-items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.tab-round .sort-select li {
+	margin-right: 0;
+}
+
 .icon {
 	--bg-color: #141618;
 	width: 16px;
@@ -1341,6 +1379,7 @@ body.popView {
 	padding: 8px 11px;
 	border-radius: 8px;
 	cursor: pointer;
+	white-space: nowrap;
 }
 
 .inp-select .inp-options .option:hover {
@@ -2200,6 +2239,19 @@ body.popView {
 
 	.tab-line li.active {
 		border-bottom-width: 0.56vw;
+	}
+
+	.tab-round li {
+		margin-right: 1.67vw;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+	}
+
+	.tab-round li button {
+		padding: 1.67vw 3.33vw 1.67vw 1.67vw;
+		font-size: 4.44vw;
+		border-radius: 6.67vw;
 	}
 
 	.icon.size-s {

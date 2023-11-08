@@ -1368,4 +1368,84 @@
 		display: block;
 	}
 }
+.no-data {
+	margin-top: 120px;
+}
+
+.no-data::before {
+	content: "";
+	display: block;
+	margin: 0 auto 20px;
+	width: 120px;
+	height: 120px;
+	background: url("../img/common/ico_nodata.png") no-repeat center/100% auto;
+}
+
+.no-data .txt {
+	font-size: 20px;
+	line-height: 1.3;
+	color: #7c828b;
+	text-align: center;
+}
+
+.no-data .btn-con {
+	margin-top: 32px;
+}
+
+.no-data .btn-con .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 0 auto;
+	padding: 12px 24px;
+	border-radius: 24px;
+}
+
+.no-data .btn-con .btn.bg-black {
+	background-color: #141618;
+	color: #fff;
+}
+
+.no-data .btn-con .ico-button-arrow {
+	--bg-color: #fff;
+	-webkit-mask-image: url("../img/common/ico-button-arrow.svg");
+	        mask-image: url("../img/common/ico-button-arrow.svg");
+	-webkit-mask-clip: content;
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	background-color: var(--bg-color);
+}
+
+@media all and (max-width: 720px) {
+	.no-data {
+		margin-top: 25.56vw;
+	}
+
+	.no-data::before {
+		margin: 0 auto 4.44vw;
+		width: 24.44vw;
+		height: 24.44vw;
+	}
+
+	.no-data .txt {
+		font-size: 3.89vw;
+	}
+
+	.no-data .btn-con {
+		margin-top: 6.67vw;
+	}
+
+	.no-data .btn-con .btn {
+		font-size: 3.89vw;
+		padding: 2.78vw 5.56vw;
+		border-radius: 6.67vw;
+	}
+}
 /*# sourceMappingURL=maps/layout.css.map */
