@@ -56,7 +56,20 @@ $(function(){
 		}
 	});
 
+	datePickerFn();
 });
+
+function datePickerFn(){
+	$.datepicker.setDefaults({
+		dateFormat: "yy.mm.dd",
+		showMonthAfterYear: true,
+		yearSuffix: ".",
+		monthNames: ["1","2","3","4","5","6","7","8","9","10","11","12"],
+		dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+	});
+
+	$(".datepicker").datepicker();
+}
 
 function filterFixedFn(){
 	$(".employ-filter .left.mo_only").offset.top();
@@ -213,4 +226,30 @@ function tooltipCloseFn(){
 	$tooltip.stop().hide();
 
 	$img.attr("src", $img.attr("src").replaceAll("ico_info_active.svg", "ico_info.svg"));
+}
+
+function openEditMenu(){
+	let $btn = $(event.currentTarget),
+		$item = $btn.parents(".items"),
+		$edit = $item.find(".edit-con");
+
+	if( windowW > 720 ) {
+		// pc event
+		$(".items .edit-con").stop().hide();
+		$edit.stop().show();
+
+		$item.on("mouseleave", function (){
+			$edit.stop().hide();
+			$item.off("mouseleave");
+		});
+	} else {
+		$edit.addClass("active");
+	}
+}
+
+function closeEditMenu(){
+	let $btn = $(event.currentTarget),
+		$edit = $btn.parents(".edit-con");
+
+	$edit.removeClass("active");
 }

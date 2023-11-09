@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents full mypage">
+        <div class="aside">
+    <div class="navi">
+        <ul class="main-link">
+            <!-- main-link li 태그 focus 클래스 추가시 파란 박스 -->
+            <li class="">
+                <a href="#">마이 커리어</a>
+            </li>
+            <li class="focus">
+                <a href="#">개인정보</a>
+                <ul class="sub-link">
+                    <!-- sub-link li 태그 focus 클래스 추가시 텍스트 강조 -->
+                    <li class="active"><a href="#">기본정보</a></li>
+                    <li><a href="#">커리어정보</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육관리</a>
+                <ul class="sub-link">
+                    <li><a href="#">프로그램 관리</a></li>
+                    <li><a href="#">클래스 관리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">커리어</a>
+                <ul class="sub-link">
+                    <li><a href="#">이력서 관리</a></li>
+                    <li><a href="#">취업지원현황</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-con">
+        <a href="#" class="logout-btn">로그아웃</a>
+    </div>
+</div>
+
+        <div class="mypage-con sub-link">
+            <div class="title">
+                <h2 class="page-tit">이력서 관리</h2>
+                <p>나의 기본 정보와 서비스 활동을 한눈에 볼 수 있어요.</p>
+            </div>
+
+            <div class="resume-list">
+                <div class="items regist-con">
+                    <a href="#" class="regist-btn">
+                        새 이력서 작성
+                    </a>
+                </div>
+                <div class="items">
+                    <div class="desc">
+                        <p class="date">2023.10.10</p>
+                        <p class="title">김워크 이력서 버전 v2</p>
+                    </div>
+                    <div class="util">
+                        <p class="badge c-green">작성중</p>
+                        <button type ="button" class="edit-btn" onclick="openEditMenu();">
+                            <img src="../assets/img/common/ico-edit-btn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-con">
+                        <ul class="edit-list">
+                            <li><a href="#">이력서 사본 만들기</a></li>
+                            <li><a href="#">이력서 다운로드</a></li>
+                            <li class="c-red"><a href="#">이력서 삭제하기</a></li>
+                        </ul>
+                        <a href="#" class="mo_only cancel-btn" onclick="closeEditMenu();">취소</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="desc">
+                        <p class="date">2023.10.10</p>
+                        <p class="title">이력서 이름이 표시됩니다. 이력서 이름이 표시됩니다.</p>
+                    </div>
+                    <div class="util">
+                        <p class="badge c-blue">작성완료</p>
+                        <button type ="button" class="edit-btn" onclick="openEditMenu();">
+                            <img src="../assets/img/common/ico-edit-btn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-con">
+                        <ul class="edit-list">
+                            <li><a href="#">이력서 사본 만들기</a></li>
+                            <li><a href="#">이력서 다운로드</a></li>
+                            <li class="c-red"><a href="#">이력서 삭제하기</a></li>
+                        </ul>
+                        <a href="#" class="mo_only cancel-btn" onclick="closeEditMenu();">취소</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="desc">
+                        <p class="date">2023.10.10</p>
+                        <p class="title">이력서 이름이 표시됩니다. 이력서 이름이 표시됩니다.</p>
+                    </div>
+                    <div class="util">
+                        <p class="badge c-blue">작성완료</p>
+                        <button type ="button" class="edit-btn" onclick="openEditMenu();">
+                            <img src="../assets/img/common/ico-edit-btn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-con">
+                        <ul class="edit-list">
+                            <li><a href="#">이력서 사본 만들기</a></li>
+                            <li><a href="#">이력서 다운로드</a></li>
+                            <li class="c-red"><a href="#">이력서 삭제하기</a></li>
+                        </ul>
+                        <a href="#" class="mo_only cancel-btn" onclick="closeEditMenu();">취소</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="desc">
+                        <p class="date">2023.10.10</p>
+                        <p class="title">이력서 이름이 표시됩니다. 이력서 이름이 표시됩니다.</p>
+                    </div>
+                    <div class="util">
+                        <p class="badge c-blue">작성완료</p>
+                        <button type ="button" class="edit-btn" onclick="openEditMenu();">
+                            <img src="../assets/img/common/ico-edit-btn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-con">
+                        <ul class="edit-list">
+                            <li><a href="#">이력서 사본 만들기</a></li>
+                            <li><a href="#">이력서 다운로드</a></li>
+                            <li class="c-red"><a href="#">이력서 삭제하기</a></li>
+                        </ul>
+                        <a href="#" class="mo_only cancel-btn" onclick="closeEditMenu();">취소</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="desc">
+                        <p class="date">2023.10.10</p>
+                        <p class="title">이력서 이름이 표시됩니다. 이력서 이름이 표시됩니다.</p>
+                    </div>
+                    <div class="util">
+                        <p class="badge c-blue">작성완료</p>
+                        <button type ="button" class="edit-btn" onclick="openEditMenu();">
+                            <img src="../assets/img/common/ico-edit-btn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-con">
+                        <ul class="edit-list">
+                            <li><a href="#">이력서 사본 만들기</a></li>
+                            <li><a href="#">이력서 다운로드</a></li>
+                            <li class="c-red"><a href="#">이력서 삭제하기</a></li>
+                        </ul>
+                        <a href="#" class="mo_only cancel-btn" onclick="closeEditMenu();">취소</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- // contents -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="select">
+                패밀리사이트
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+</div>
+
+</body>
+</html>
