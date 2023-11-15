@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -112,8 +112,7 @@
 <!--// mob-nav -->
 
     <!-- contents -->
-    <!-- contents -->
-    <div class="contents program-apply">
+    <div class="contents apply-form">
         <div class="page-tit ta-left">
             <h2>프로그램 참여 신청하기</h2>
             <p class="desc">프로그램 참여를 신청하려면 아래 내용을 <br class="mo_only"/> 작성해주시기 바랍니다.</p>
@@ -241,11 +240,11 @@
                     <div class="notice-txt">직무 경력(기간, 직무내용, 직급)을 긴 경력부터 <br class="mo_only"/> 작성해 주세요.</div>
                 </div>
                 <div class="inp-list">
-                    <div class="inp">
+                    <div class="inp textarea size-s">
                         <label class="inp-label">직무내용</label>
                         <div class="inp-group ">
                             <div class="inp-area">
-                                <input type="text" name="" placeholder="(예시) 00기업에서 인사팀 팀장으로 인재 채용 및 개발, 관리 운영 전반을 담당함">
+                                <textarea placeholder="(예시) 00기업에서 인사팀 팀장으로 인재 채용 및 개발, 관리 운영 전반을 담당함" ></textarea>
                             </div>
                         </div>
                     </div>
@@ -276,16 +275,16 @@
                         <label class="inp-label">교육참여이유가 어떻게 되시나요?</label>
                         <div class="inp-group ">
                             <div class="inp-area">
-                                <input type="text" name="" placeholder="내용을 입력해 주세요.">
+                                <input type="text" name="" placeholder="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="inp size-l">
+                    <div class="inp textarea size-s">
                         <label class="inp-label">소속 및 지위</label>
                         <div class="inp-group ">
                             <div class="inp-area">
-                                <input type="text" name="" placeholder="(예시) 한국사회적기업 진흥원 프로보노 멘토, 없는 경우 '없음'기재">
+                                <textarea placeholder="(예시) 한국사회적기업 진흥원 프로보노 멘토, 없는 경우 '없음'기재" ></textarea>
                             </div>
                         </div>
                     </div>
@@ -593,8 +592,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -626,6 +638,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 </body>

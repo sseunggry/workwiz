@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -166,10 +166,10 @@
                         <dl>
                             <dt>아이디(이메일)</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="workwiz@workwiz.com" disabled>
+                                            <input type="text" name="" value="workwiz@workwiz.com" readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -178,10 +178,10 @@
                         <dl>
                             <dt>비밀번호</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="password" name="" value="⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁" disabled>
+                                            <input type="password" name="" value="⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -191,10 +191,10 @@
                         <dl>
                             <dt>이름</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="김워크" disabled>
+                                            <input type="text" name="" value="김워크" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -204,10 +204,10 @@
                         <dl>
                             <dt>생년월일</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="1960.10.10" disabled>
+                                            <input type="text" name="" value="1960.10.10" readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -216,10 +216,10 @@
                         <dl>
                             <dt>휴대폰번호</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="010-1234-1234" disabled>
+                                            <input type="text" name="" value="010-1234-1234" readonly>
                                             <span class="badge success">인증완료</span>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
@@ -298,8 +298,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -331,6 +344,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 <!-- pop content -->

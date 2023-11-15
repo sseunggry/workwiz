@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">콘텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">채용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- mobileLnb-->
+    <div class="mobileLnb mo_only">
+        <div class="inner">
+            <button type="button" class="menu-btn" onclick="openItemList();"></button>
+            <p>지원분야</p>
+            <button type="button" class="close-btn" onclick="popupOpenFn('pop-stop')">
+                <img src="../assets/img/common/ico_close.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <!-- // mobileLnb-->
+
+    <!-- contents -->
+    <div class="contents submit-wrap">
+        <div class="profile-info">
+            <div class="info-con">
+                <div class="form-con">
+                    <div class="form-title">
+                        <h3>커리어 프로필</h3>
+                    </div>
+
+                    <!-- content-box -->
+                    <div class="content-box pd-m">
+                        <div class="title">
+                            <h3>이력서 이름 <span class="c-red">*</span></h3>
+                        </div>
+                        <div class="inp required">
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" placeholder="(예시) 경영기획(00주식 회사)">
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+
+                        <div class="title mt">
+                            <h3>지원분야 <span class="c-red">*</span></h3>
+                        </div>
+                        <div class="inp required">
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" placeholder="(예시) 영업 및 영업관리">
+                                </div>
+                            </div>
+                            <p class="desc-error">필수 정보입니다.</p>
+                        </div>
+
+                        <div class="title mt" data-scroll="인적사항">
+                            <h3>인적사항 <span class="c-red">*</span></h3>
+                        </div>
+                        <div class="personal-con">
+                            <div class="profile-img">
+                                <label class="inp-label mo_only">증명사진</label>
+                                <!-- 활성화시 active 클래스 추가 -->
+                                <div class="add-con active">
+                                    <input type="file" id="profile-upload">
+                                    <label for="profile-upload" class="profile-upload-btn">사진추가</label>
+                                </div>
+                                <!-- 활성화시 active 클래스 추가 -->
+                                <div class="edit-con">
+                                    <img src="../assets/img/content/profile_sample.jpg" alt="">
+                                    <a href="#" class="edit-btn"></a>
+                                </div>
+                            </div>
+                            <div class="profile-data">
+                                <div class="inp-con flex-con">
+                                    <div class="inp">
+                                        <label class="inp-label">한글 이름</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="이름을 입력해 주세요.">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                    <div class="inp">
+                                        <label class="inp-label">영문 이름</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="영문 이름을 입력해 주세요.">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                </div>
+                                <div class="inp-con flex-con">
+                                    <div class="inp">
+                                        <label class="inp-label">생년월일</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM.DD">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                    <div class="inp">
+                                        <label class="inp-label">휴대폰 번호</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="휴대폰번호를 입력해 주세요.">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                </div>
+                                <div class="inp-con">
+                                    <div class="inp">
+                                        <label class="inp-label">이메일</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="아이디(이메일)을 입력해 주세요.">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                </div>
+                                <div class="inp-con">
+                                    <div class="inp">
+                                        <label class="inp-label">주소</label>
+                                        <div class="inp-group ">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="주소를 입력해 주세요.">
+                                            </div>
+                                        </div>
+                                        <p class="desc-error">필수 정보입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // content-box-->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add" data-scroll="핵심역량">
+                        <div class="title">
+                            <h3>핵심역량 <span class="c-red">*</span></h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>지원 직무에 관한 핵심역량을 입력해 주세요.</p>
+                            <p>1개 이상의 항목 작성 시 "추가' 버튼을 이용해  주세요.</p>
+                        </div>
+
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">제목</label>
+                                    <div class="inp-group ">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="(예시) 현장 중심의 문제해결 능력">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp textarea">
+                                    <label class="inp-label">상세 내용</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <textarea placeholder="커뮤니케이션, 팀워크 강화, 효율적 일 처리, 창의성, 전략적 사고와 같은&#10; 역량이 나타나는 경험을 적어주세요.&#10;(인사담당자를 위해 5~10줄 이내로 간략히 적어 주세요.)"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                            </div>
+                            <!-- add-inp -->
+                            <div class="default-inp add-inp">
+                                <button type="button" class="remove-btn">
+                                    <img src="../assets/img/common/ico_close_gray_s.svg" alt="">
+                                </button>
+                                <div class="inp">
+                                    <label class="inp-label">제목</label>
+                                    <div class="inp-group ">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="(예시) 현장 중심의 문제해결 능력">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp textarea">
+                                    <label class="inp-label">상세 내용</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <textarea placeholder="커뮤니케이션, 팀워크 강화, 효율적 일 처리, 창의성, 전략적 사고와 같은&#10; 역량이 나타나는 경험을 적어주세요.&#10;(인사담당자를 위해 5~10줄 이내로 간략히 적어 주세요.)"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                            </div>
+                            <!-- // add-inp -->
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add" data-scroll="경력사항">
+                        <div class="title">
+                            <h3>경력사항 <span class="c-red">*</span></h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>지원 직무에 관한 핵심역량을 입력해 주세요.</p>
+                            <p>1개 이상의 항목 작성 시 "추가' 버튼을 이용해  주세요.</p>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">기업명/부서</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="(예시) 주식회사 000 (영업본부/사업본부장)">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">직급/직책</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="(예시) 팀장">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp inp-date">
+                                    <label class="inp-label">기간</label>
+                                    <div class="date-con">
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <span class="bar">-</span>
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <p class="date-txt">00년 00개월</p>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add" data-scroll="주요업무 및 성과">
+                        <div class="title">
+                            <h3>주요 업무 및 성과 <span class="c-red">*</span></h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>지원 직무에 관한 핵심역량을 입력해 주세요.</p>
+                            <p>1개 이상의 항목 작성 시 "추가' 버튼을 이용해  주세요.</p>
+                        </div>
+
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">제목</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="(예시) 주식회사 000 (영업본부/사업본부장)">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp inp-date">
+                                    <label class="inp-label">기간</label>
+                                    <div class="date-con">
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <span class="bar">-</span>
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <p class="date-txt">00년 00개월</p>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp textarea">
+                                    <label class="inp-label">상세 내용</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <textarea placeholder="커뮤니케이션, 팀워크 강화, 효율적 일 처리, 창의성, 전략적 사고와 같은 역량이&#10; 나타나는 경험을 적어주세요.&#10;(인사담당자를 위해 5~10줄 이내로 간략히 적어 주세요.)"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add" data-scroll="학력사항">
+                        <div class="title">
+                            <h3>학력사항 <span class="c-red">*</span></h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>최종학력 2개만 기재해 주세요.</p>
+                        </div>
+
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">학교명</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="학교명을 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">학과</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="학과를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp inp-date">
+                                    <label class="inp-label">기간</label>
+                                    <div class="date-con">
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <span class="bar">-</span>
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <p class="date-txt">00년 00개월</p>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">졸업여부</label>
+                                    <div class="inp-select w-200 pc_only">
+                                        <button class="inp-btn">
+                                            <span class="placeholder" style="display: none;">지역을 선택해 주세요.</span>
+                                            <span class="value">졸업</span>
+                                        </button>
+                                        <ul class="inp-options">
+                                            <li class="option">졸업</li>
+                                            <li class="option">졸업</li>
+                                        </ul>
+                                    </div>
+                                    <div class="inp-select mo_only">
+                                        <button class="inp-btn" onclick="popupOpenFn('select_01')">
+                                            <span class="value">졸업</span>
+                                        </button>
+                                    </div>
+                                    <p class="desc-error">필수 정보입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+                </div>
+
+                <div class="form-con">
+                    <div class="form-title">
+                        <h3>기타사항</h3>
+                        <p>· 미입력시 이력서에는 노출되지 않습니다.</p>
+                        <p>· 1개 이상의 항목 작성 시 '추가' 버튼을 이용해  주세요.</p>
+                    </div>
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add">
+                        <div class="title">
+                            <h3>학력사항</h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>지원 직무와 관련된 자격사항 및 교육사항을  기재해 주세요.</p>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">자격증</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="자격증명을 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">발행처</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="발행처를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp w-200">
+                                    <label class="inp-label">취득일</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="YYYY.MM.DD">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add">
+                        <div class="title">
+                            <h3>교육사항</h3>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">교육명</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="교육명을 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">교육처</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="교육처를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp inp-date">
+                                    <label class="inp-label">기간</label>
+                                    <div class="date-con">
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <span class="bar">-</span>
+                                        <div class="inp-group">
+                                            <div class="inp-area">
+                                                <input type="text" name="" placeholder="YYYY.MM">
+                                            </div>
+                                        </div>
+                                        <p class="date-txt">00년 00개월</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add">
+                        <div class="title">
+                            <h3>외국어능력</h3>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp">
+                                    <label class="inp-label">언어</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="언어를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">어학종류 및 회화</label>
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <input type="text" name="" placeholder="어학종류 및 회화를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inp">
+                                    <label class="inp-label">수준</label>
+                                    <div class="inp-select w-200 pc_only">
+                                        <button class="inp-btn">
+                                            <span class="placeholder" style="display: none;">지역을 선택해 주세요.</span>
+                                            <span class="value">상</span>
+                                        </button>
+                                        <ul class="inp-options">
+                                            <li class="option">상</li>
+                                            <li class="option">상</li>
+                                        </ul>
+                                    </div>
+                                    <div class="inp-select mo_only">
+                                        <button class="inp-btn" onclick="popupOpenFn('select_02')">
+                                            <span class="value">상</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">추가</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+                </div>
+
+                <div class="form-con">
+                    <div class="form-title">
+                        <h3>역량기술서</h3>
+                        <p>· 자신의 강점 및 경험을 잘 나타날 수 있게 기술해 주세요.</p>
+                    </div>
+
+                    <!-- content-box -->
+                    <div class="content-box">
+                        <div class="title">
+                            <h3>비전</h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>기업의 핵심 가치에 부합할 수 있도록 본인의 커리어 비전(지원동기)에 대해 기술해 주세요.</p>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp textarea">
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <textarea placeholder="(예시)&#10; - 새롭게 경험하는 인생 2막, 인생의 0000을 위해 0000업무 분야 도전&#10; - 0000 대상에게 0000 형태의 사회적 가치를 제공하기 위해 0000 기업 0000 수행"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title mt-3">
+                            <h3>커뮤니케이션 스킬</h3>
+                        </div>
+
+                        <div class="guide-con">
+                            <p>원활한 커뮤니케이션 스킬 보유 역량에 대해 기술해 주세요.</p>
+                        </div>
+
+                        <div class="inp-form">
+                            <div class="default-inp">
+                                <div class="inp textarea">
+                                    <div class="inp-group">
+                                        <div class="inp-area">
+                                            <textarea placeholder="(예시)&#10; - 0000 기업에서 00 업무를 진행하여 커뮤니케이션 능력을 향상시킬 수 있었음&#10; - 잔디, 노션 협업 툴 사용이 가능하며 줌 & 구글 사용이 가능함"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+                </div>
+
+                <div class="form-con">
+                    <div class="form-title">
+                        <h3>파일 첨부</h3>
+                        <p>· 500MB 이하의 파일 3개까지 업로드 가능합니다.</p>
+                    </div>
+
+                    <!-- content-box -->
+                    <div class="content-box pb-add">
+                        <div class="file-list">
+                            <div class="items pdf">
+                                <p>김워크 포트폴리오 첨부파일_v1.0.pdf 김워크 포트폴리오 첨부파일_v1.0.pdf 김워크 포트폴리오 첨부파일_v1.0.pdf</p>
+                                <button type="button" class="delete-btn">
+                                    <img src="../assets/img/common/ico_close_gray.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="items word">
+                                <p>김워크 첨부파일_v1.0.word</p>
+                                <button type="button" class="delete-btn">
+                                    <img src="../assets/img/common/ico_close_gray.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="add-btn-con">
+                            <button type="button" class="add-btn">파일 선택</button>
+                        </div>
+                    </div>
+                    <!-- // content-box -->
+                </div>
+
+            </div>
+
+            <div class="item-con">
+                <p class="title">이력서 항목</p>
+
+                <div class="item-list">
+                    <div class="default-list">
+                        <dl>
+                            <dt onclick="mobScrollFn(0);">지원분야</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt onclick="mobScrollFn(1);">인적사항</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt onclick="mobScrollFn(2);">핵심역량</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt onclick="mobScrollFn(3);">경력사항</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt onclick="mobScrollFn(4);">주요업무 및 성과</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt onclick="mobScrollFn(5);">학력사항</dt>
+                            <dd>
+                                <p class="badge">필수</p>
+                            </dd>
+                        </dl>
+                        <dl class="option active">
+                            <dt>기타사항</dt>
+                            <dd>
+                                <button type="button" class="profile-btn" onclick="popupOpenFn('pop-delete')"></button>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="option-list">
+                        <p class="sub-title">역량기술서</p>
+                        <dl class="option">
+                            <dt>비전</dt>
+                            <dd>
+                                <button type="button" class="profile-btn"></button>
+                            </dd>
+                        </dl>
+                        <dl class="option">
+                            <dt>커뮤니케이션 스킬</dt>
+                            <dd>
+                                <button type="button" class="profile-btn"></button>
+                            </dd>
+                        </dl>
+                        <dl class="option">
+                            <dt>업무추진력</dt>
+                            <dd>
+                                <button type="button" class="profile-btn"></button>
+                            </dd>
+                        </dl>
+                        <dl class="option">
+                            <dt>경험 및 역할</dt>
+                            <dd>
+                                <button type="button" class="profile-btn"></button>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="page-btn">
+                    <button type="button" class="btn">저장하기</button>
+                </div>
+            </div>
+
+            <div class="submit-con">
+                <div class="inner">
+                    <div class="left pc_only">
+                        <button type="button" class="preview-btn">미리보기/다운로드</button>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="temporary-btn">임시저장</button>
+                        <button type="button" class="submit-btn">작성완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // contents -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
+</div>
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="select_01">
+    <div class="pop-inner">
+        <ul class="inp-options">
+            <li class="option">졸업</li>
+            <li class="option">졸업</li>
+        </ul>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select_01')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- // pop content -->
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="select_02">
+    <div class="pop-inner">
+        <ul class="inp-options">
+            <li class="option">상</li>
+            <li class="option">상</li>
+        </ul>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select_02')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- // pop content -->
+
+<!-- pop content -->
+<div class="pop-wrap" data-pop="pop-stop">
+    <div class="pop-inner w496">
+        <div class="edit-con">
+            <p class="title">이력서 작성을 그만두시겠어요?</p>
+            <p class="sub-txt">
+                작성을 완료하지 않고 페이지를 벗어날 경우,<br/>
+                지금까지 작성한 내용이 사라집니다.
+            </p>
+            <div class="page-btn">
+                <button type="button" class="line btn" onclick="popupCloseFn('pop-stop')">취소</button>
+                <button type="button" class="btn bg-black" onclick="popupCloseFn('pop-stop')">종료</button>
+            </div>
+        </div>
+        <button type="button" class="close-btn" onclick="popupCloseFn('pop-stop')">
+            <img src="../assets/img/common/ico_close.svg" alt="">
+        </button>
+    </div>
+</div>
+<!-- // pop content -->
+
+<!-- pop content -->
+<div class="pop-wrap" data-pop="pop-delete">
+    <div class="pop-inner w496">
+        <div class="edit-con">
+            <p class="title">이력서 항목을 삭제할까요?</p>
+            <p class="sub-txt">
+                이력서 항목을 삭제하면<br/>
+                기존에 작성된 내용도 모두 삭제됩니다.
+            </p>
+            <div class="page-btn">
+                <button type="button" class="line btn" onclick="popupCloseFn('pop-delete')">취소</button>
+                <button type="button" class="btn bg-black" onclick="popupCloseFn('pop-delete')">종료</button>
+            </div>
+        </div>
+        <button type="button" class="close-btn" onclick="popupCloseFn('pop-delete')">
+            <img src="../assets/img/common/ico_close.svg" alt="">
+        </button>
+    </div>
+</div>
+<!-- // pop content -->
+
+<script>
+    $(function(){
+        $("body").addClass("ov-ha");
+
+        let c_height = $(".contents").outerHeight(),
+            windowH = window.innerHeight,
+            submitH = $(".profile-info .submit-con").outerHeight();
+
+        if( windowW > 720 ) {
+            if( scrolTop >= (c_height - windowH + submitH) ) {
+                $(".profile-info .submit-con").addClass("bottom");
+            } else {
+                $(".profile-info .submit-con").removeClass("bottom");
+            }
+        } else {
+            $(".wrap").addClass("mobileMode");
+        }
+
+        let scrollVal, mobileLnbH;
+
+        $(window).scroll(function(){
+            c_height = $(".contents").outerHeight();
+            windowH = window.innerHeight;
+            submitH = $(".profile-info .submit-con").outerHeight();
+
+            if( windowW > 720 ) {
+                if( scrolTop >= (c_height - windowH + submitH) ) {
+                    $(".profile-info .submit-con").addClass("bottom");
+                } else {
+                    $(".profile-info .submit-con").removeClass("bottom");
+                }
+            } else {
+                mobileLnbH = $(".mobileLnb").outerHeight();
+
+                // 모바일 스크롤 텍스트 변경
+                scrollVal = new Array();
+                $("[data-scroll]").each(function(){
+                    scrollVal.push($(this).offset().top);
+                });
+
+                if( scrolTop >= scrollVal[4] - mobileLnbH ) {
+                    $(".mobileLnb p").text("학력사항");
+                } else if( scrolTop >= scrollVal[3] - mobileLnbH ) {
+                    $(".mobileLnb p").text("주요업무 및 성과");
+                } else if( scrolTop >= scrollVal[2] - mobileLnbH ) {
+                    $(".mobileLnb p").text("경력사항");
+                } else if( scrolTop >= scrollVal[1] - mobileLnbH ) {
+                    $(".mobileLnb p").text("핵심역량");
+                } else if( scrolTop >= scrollVal[0] - mobileLnbH ) {
+                    $(".mobileLnb p").text("인적사항");
+                } else {
+                    $(".mobileLnb p").text("지원분야");
+                }
+            }
+        });
+
+        $(window).resize(function(){
+            if(windowW <= 720){
+                $(".profile-info .submit-con").removeClass("bottom");
+                $(".wrap").addClass("mobileMode");
+            } else {
+                $("body").removeClass("popView");
+                $(".wrap").removeClass("mobileMode");
+                $(".mobileLnb").removeClass("active");
+                $(".profile-info .item-con").stop().show();
+            }
+        });
+    });
+
+    function openItemList(){
+        let $this = $(event.currentTarget),
+            $mobileLnb = $this.parents(".mobileLnb"),
+            $itemList = $(".profile-info .item-con");
+
+        if( !$mobileLnb.hasClass("active") ) {
+            $("body").addClass("popView");
+            $mobileLnb.addClass("active");
+            $itemList.stop().fadeIn();
+        } else {
+            $("body").removeClass("popView");
+            $mobileLnb.removeClass("active");
+            $itemList.stop().fadeOut();
+        }
+    }
+
+    function mobScrollFn(n){
+        scrollVal = new Array();
+        $("[data-scroll]").each(function(){
+            scrollVal.push($(this).offset().top);
+        });
+
+        $("body").removeClass("popView");
+        $(".mobileLnb").removeClass("active");
+        $(".profile-info .item-con").stop().fadeOut();
+
+        if( n > 0 ) {
+            $(window).scrollTop(scrollVal[n-1] - $(".mobileLnb").outerHeight() + 1);
+        } else {
+            $(window).scrollTop(0);
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">콘텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">채용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents apply-form">
+        <div class="page-tit ta-left">
+            <h2>커리어피트니스 신청하기</h2>
+            <p class="desc">커리어피트니스를 신청하시려면 아래 내용을 <br class="mo_only"/> 작성해주시기 바랍니다.</p>
+        </div>
+
+        <div class="form-con">
+            <div class="content-box pd-m">
+                <div class="title">
+                    <h3>기본 정보 <span class="c-red">*</span></h3>
+                </div>
+                <div class="inp-list">
+                    <div class="inp required">
+                        <label class="inp-label">이름(성명)</label>
+                        <div class="inp-group">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="이름을 입력해 주세요." value="김워크">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp required">
+                        <label class="inp-label">휴대폰번호</label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="휴대폰번호를 입력해 주세요." value="010-1234-1234">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp required">
+                        <label class="inp-label">이메일</label>
+                        <div class="inp-group">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="아이디(이메일)을 입력해 주세요." value="workwiz@workwiz.com">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp required">
+                        <label class="inp-label">생년월일</label>
+                        <div class="inp-group">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="YYYY.MM.DD" value="1960.10.10">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp-address required">
+                        <p class="inp-label">거주지</p>
+                        <div class="inp-group pc_only">
+                            <div class="inp-select">
+                                <button class="inp-btn">
+                                    <span class="placeholder">시∙군</span>
+                                </button>
+                                <ul class="inp-options">
+                                    <li class="option">서울</li>
+                                    <li class="option">경기</li>
+                                    <li class="option">인천</li>
+                                </ul>
+                            </div>
+                            <div class="inp-select">
+                                <button class="inp-btn">
+                                    <span class="placeholder">구</span>
+                                </button>
+                                <ul class="inp-options">
+                                    <li class="option">노원구</li>
+                                    <li class="option">동작구</li>
+                                    <li class="option">마포구</li>
+                                </ul>
+                            </div>
+                            <div class="inp-select">
+                                <button class="inp-btn">
+                                    <span class="placeholder">동</span>
+                                </button>
+                                <ul class="inp-options">
+                                    <li class="option">신대방동</li>
+                                    <li class="option">원종동</li>
+                                    <li class="option">대방동</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inp-group mo_only">
+                            <div class="inp-select">
+                                <button class="inp-btn" onclick="popupOpenFn('select-addr-01')">
+                                    <span class="placeholder">시∙군</span>
+                                </button>
+                            </div>
+                            <div class="inp-select">
+                                <button class="inp-btn" onclick="popupOpenFn('select-addr-02')">
+                                    <span class="placeholder">구</span>
+                                </button>
+                            </div>
+                            <div class="inp-select">
+                                <button class="inp-btn" onclick="popupOpenFn('select-addr-03')">
+                                    <span class="placeholder">동</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box pd-m main-career">
+                <div class="title">
+                    <h3>직무 경력</h3>
+                </div>
+                <div class="desc-box">
+                    <div class="notice-txt">직무 경력(기간, 직무내용, 직급)을 긴 경력부터 <br class="mo_only"/> 작성해 주세요.</div>
+                </div>
+                <div class="inp-list">
+                    <div class="inp textarea size-s">
+                        <label class="inp-label">직무내용</label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <textarea placeholder="(예시) 00기업에서 인사팀 팀장으로 인재 채용 및 개발, 관리 운영 전반을 담당함" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inp calendar">
+                        <label class="inp-label">
+                            기간
+                            <span class="date-txt mo_only">00년 0개월</span>
+                        </label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="YYYY.MM" class="datepicker">
+                            </div>
+                            <span class="dash"></span>
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="YYYY.MM" class="datepicker">
+                            </div>
+                            <p class="date-txt pc_only">00년 0개월</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="career-add-con">
+                    <button type="button" class="c-blue">직무경력 추가하기</button>
+                </div>
+            </div>
+            <div class="content-box pd-l border-none">
+                <div class="inp-list gap-l">
+                    <div class="inp-radio-group">
+                        <p class="inp-label">커리어 피트니스 참여 방법을 선택해주세요.</p>
+                        <div class="inp-radio-list">
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio01">
+                                <label for="radio01" class="inp-label">
+                                    <span class="inp-radio-text">베이직</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio02">
+                                <label for="radio02" class="inp-label">
+                                    <span class="inp-radio-text">프리미엄</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio03">
+                                <label for="radio03" class="inp-label">
+                                    <span class="inp-radio-text">미정</span>
+                                    <small class="desc-red">* 상담 진행 시 선택 가능</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inp-checkbox-group">
+                        <p class="inp-label">다음중 가장 관심있는 분야는 무엇인가요? (복수선택가능)</p>
+                        <div class="checkbox-list grid-col">
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk02" id="chk02_01">
+                                <label for="chk02_01" class="inp-label">
+                                    <span class="inp-checkbox-text">인사</span>
+                                </label>
+                            </div>
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk01" id="chk02_02">
+                                <label for="chk02_02" class="inp-label">
+                                    <span class="inp-checkbox-text">총무</span>
+                                </label>
+                            </div>
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk02" id="chk02_03">
+                                <label for="chk02_03" class="inp-label">
+                                    <span class="inp-checkbox-text">기획</span>
+                                </label>
+                            </div>
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk02" id="chk02_04">
+                                <label for="chk02_04" class="inp-label">
+                                    <span class="inp-checkbox-text">재무회계</span>
+                                </label>
+                            </div>
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk02" id="chk02_05">
+                                <label for="chk02_05" class="inp-label">
+                                    <span class="inp-checkbox-text">영업</span>
+                                </label>
+                            </div>
+                            <div class="inp-checkbox">
+                                <input type="checkbox" name="chk02" id="chk02_06" checked>
+                                <label for="chk02_06" class="inp-label">
+                                    <span class="inp-checkbox-text">기타</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inp etc">
+                            <div class="inp-group">
+                                <div class="inp-area">
+                                    <input type="text" placeholder="기타 분야를 입력해 주세요.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inp-radio-group">
+                        <p class="inp-label">최근 경력 이후 공백기가 얼마나 되었나요?</p>
+                        <div class="radio-list grid-col">
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio2_01">
+                                <label for="radio2_01" class="inp-label">
+                                    <span class="inp-radio-text">재직중</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio2_02">
+                                <label for="radio2_02" class="inp-label">
+                                    <span class="inp-radio-text">1년 미만</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio2_03">
+                                <label for="radio2_03" class="inp-label">
+                                    <span class="inp-radio-text">1년 이상 3년 미만</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio2_04">
+                                <label for="radio2_04" class="inp-label">
+                                    <span class="inp-radio-text">3년 이상</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio2_05">
+                                <label for="radio2_05" class="inp-label">
+                                    <span class="inp-radio-text">기타</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inp textarea size-s">
+                        <label class="inp-label">커리어피트니스는 어떻게 알게 되셨나요?</label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <textarea placeholder="(예시) 상상우리 홈페이지, 워크위즈, 페이스북, 인스타그램, 지인추천 등" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inp-radio-group">
+                        <p class="inp-label">커리어피트니스에 참여하고 싶은 이유는 무엇인가요?</p>
+                        <div class="radio-list grid-col">
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio3_01">
+                                <label for="radio3_01" class="inp-label">
+                                    <span class="inp-radio-text">빠른 재취업</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio3_02">
+                                <label for="radio3_02" class="inp-label">
+                                    <span class="inp-radio-text">재취업 관련 교육</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio3_03">
+                                <label for="radio3_03" class="inp-label">
+                                    <span class="inp-radio-text">전문 헤드헌터 서비스 이용</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio3_04">
+                                <label for="radio3_04" class="inp-label">
+                                    <span class="inp-radio-text">커뮤니티 형성</span>
+                                </label>
+                            </div>
+                            <div class="inp-radio">
+                                <input type="radio" name="radio01" id="radio3_05">
+                                <label for="radio3_05" class="inp-label">
+                                    <span class="inp-radio-text">기타</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp-checkbox-list line">
+                    <div class="inp-checkbox">
+                        <input type="checkbox" name="" id="chk03">
+                        <label for="chk03" class="inp-label">
+                            <span class="inp-checkbox-text">
+                                 <span class="c-blue underline">개인정보 수집 및 이용약관</span>에 동의합니다.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="page-btn pb-0">
+                    <button type="button" class="btn">신청하기</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // contents -->
+
+    <!-- pop content -->
+    <div class="pop-wrap select-pop" data-pop="select-addr-01">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">서울</li>
+                <li class="option">경기</li>
+                <li class="option">인천</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-01')">취소</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap select-pop" data-pop="select-addr-02">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">노원구</li>
+                <li class="option">동작구</li>
+                <li class="option">마포구</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-02')">취소</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap select-pop" data-pop="select-addr-03">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">신대방동</li>
+                <li class="option">원종동</li>
+                <li class="option">대방동</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-03')">취소</button>
+            </div>
+        </div>
+    </div>
+    <!-- //pop content -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
+</div>
+
+</body>
+</html>

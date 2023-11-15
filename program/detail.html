@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -117,7 +117,7 @@
             <img src="../assets/img/content/keyVisual_02.jpg" alt="" class="pc_img">
             <img src="../assets/img/content/mo_keyVisual_02.jpg" alt="" class="mo_img">
         </div>
-        <div class="contents program mb-0">
+        <div class="contents program pb-0">
             <div class="detail-info">
                 <div class="info-box">
                     <div class="tit-box">
@@ -330,69 +330,6 @@
             </div>
             </div>
         </div>
-        <div class="recommend-info bg-gray">
-            <div class="inner">
-                <div class="sub-tit ta-center mb-4">
-                    <h2 class="tit">추천 채용공고</h2>
-                </div>
-                <div class="employ-list">
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <!-- badge 마감기한 D-10 이내 표기: bg-blue 클래스 추가, 채용 기간 표기: bg-black 클래스 추가, 마감 표기: bg-gary 클래스 추가 -->
-                                <span class="badge small bg-blue">D-2</span>
-                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">워크위즈 UX/UI 프로덕트 기획자 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <span class="badge small bg-blue">D-2</span>
-                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">MG새마을금고 데이터분석가 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <span class="badge small bg-black">~12.30</span>
-                                <img src="../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">장비개발기업 개발 QA 그룹장 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn line btn-m bg-white">
-                        <i class="icon icon-plus"></i> <span>더보기</span>
-                    </button>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- // contents -->
 
@@ -438,8 +375,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -471,6 +421,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 </body>

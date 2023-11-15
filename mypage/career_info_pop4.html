@@ -55,9 +55,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -161,10 +161,10 @@
                         <dl>
                             <dt>현재 취·창업 상태</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="퇴직 후 취업 준비 중" disabled>
+                                            <input type="text" name="" value="퇴직 후 취업 준비 중" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -178,10 +178,10 @@
                         <dl>
                             <dt>관심분야</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="생애 이해 및 설계, 사회참여/봉사, 여가, 주거, 기타(기타입력사항)" disabled>
+                                            <input type="text" name="" value="생애 이해 및 설계, 사회참여/봉사, 여가, 주거, 기타(기타입력사항)" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -195,10 +195,10 @@
                         <dl>
                             <dt>관심직무</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="신사업기획" disabled>
+                                            <input type="text" name="" value="신사업기획" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -212,44 +212,44 @@
                         <dl class="ai-s">
                             <dt>경력사항</dt>
                             <dd>
-                                <div class="list disabled">
+                                <div class="list readonly">
                                     <div class="inp">
                                         <p>기업명</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="상상우리" disabled>
+                                            <input type="text" name="" value="상상우리" readonly>
                                         </div>
                                     </div>
                                     <div class="inp">
                                         <p>직무</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="영업" disabled>
+                                            <input type="text" name="" value="영업" readonly>
                                         </div>
                                     </div>
                                     <div class="inp">
                                         <p>직급</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="과장" disabled>
+                                            <input type="text" name="" value="과장" readonly>
                                         </div>
                                     </div>
                                     <button type="button" class="btn bg-secondary btn-m">변경</button>
                                 </div>
-                                <div class="list disabled">
+                                <div class="list readonly">
                                     <div class="inp">
                                         <p>기업명</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="상상우리" disabled>
+                                            <input type="text" name="" value="상상우리" readonly>
                                         </div>
                                     </div>
                                     <div class="inp">
                                         <p>직무</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="영업" disabled>
+                                            <input type="text" name="" value="영업" readonly>
                                         </div>
                                     </div>
                                     <div class="inp">
                                         <p>직급</p>
                                         <div class="inp-group">
-                                            <input type="text" name="" value="과장" disabled>
+                                            <input type="text" name="" value="과장" readonly>
                                         </div>
                                     </div>
                                     <button type="button" class="btn bg-secondary btn-m">변경</button>
@@ -300,10 +300,10 @@
                         <dl>
                             <dt>거주 지역</dt>
                             <dd>
-                                <div class="inp disabled">
+                                <div class="inp readonly">
                                     <div class="inp-group no-wrap">
                                         <div class="inp-area">
-                                            <input type="text" name="" value="서울시 용산구" disabled>
+                                            <input type="text" name="" value="서울시 용산구" readonly>
                                         </div>
                                         <button type="button" class="btn bg-secondary btn-m">변경</button>
                                     </div>
@@ -340,8 +340,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -373,6 +386,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 <!-- pop content -->
@@ -380,30 +408,59 @@
     <div class="pop-inner w496">
         <div class="edit-con">
             <p class="title">거주 지역 변경</p>
-            <div class="select-con">
-                <div class="inp-select">
-                    <button class="inp-btn">
-                        <span class="value">서울시</span>
-                    </button>
-                    <ul class="inp-options">
-                        <li class="option">서울시</li>
-                        <li class="option">서울시</li>
-                        <li class="option">서울시</li>
-                        <li class="option">서울시</li>
-                        <li class="option">서울시</li>
-                    </ul>
-                </div>
-                <div class="inp-select">
-                    <button class="inp-btn">
-                        <span class="value">용산구</span>
-                    </button>
-                    <ul class="inp-options">
-                        <li class="option">용산구</li>
-                        <li class="option">용산구</li>
-                        <li class="option">용산구</li>
-                        <li class="option">용산구</li>
-                        <li class="option">용산구</li>
-                    </ul>
+            <div class="employ-filter">
+                <div class="region-select">
+                    <div class="city">
+                        <p class="sub-tit">지역</p>
+                        <ul class="inp-btn-list">
+                            <li class="active"><button type="button">서울</button></li>
+                            <li><button type="button">부산</button></li>
+                            <li><button type="button">대구</button></li>
+                            <li><button type="button">인천</button></li>
+                            <li><button type="button">광주</button></li>
+                            <li><button type="button">대전</button></li>
+                            <li><button type="button">울산</button></li>
+                            <li><button type="button">경기</button></li>
+                            <li><button type="button">경기</button></li>
+                        </ul>
+                    </div>
+                    <div class="district">
+                        <p class="sub-tit">상세 지역</p>
+                        <ul class="inp-checkbox-list type2">
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict1" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict1" class="inp-label">전체</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict2" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict2"  class="inp-label">강남구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict3" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict3"  class="inp-label">강동구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict4" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict4"  class="inp-label">강북구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict5" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict5"  class="inp-label">강서구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict6" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict6"  class="inp-label">관악구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict7" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict7"  class="inp-label">광진구</label>
+                            </li>
+                            <li class="inp-checkbox">
+                                <input type="checkbox" id="mo_radioDistrict8" name="mo_radioDistrict">
+                                <label for="mo_radioDistrict8"  class="inp-label">구로구</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="page-btn">

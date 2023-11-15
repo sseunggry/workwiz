@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -117,7 +117,7 @@
             <img src="../assets/img/content/keyVisual.jpg" alt="" class="pc_img">
             <img src="../assets/img/content/mo_keyVisual.jpg" alt="" class="mo_img">
         </div>
-        <div class="contents employ mb-0">
+        <div class="contents employ pb-0">
             <div class="detail-info">
                 <div class="info-box">
                     <div class="tit-box">
@@ -402,8 +402,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -435,6 +448,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 </body>

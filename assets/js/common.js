@@ -1,6 +1,8 @@
 /* common */
 let scrolTop = "",
-	windowW = window.innerWidth;
+	windowW = window.innerWidth,
+	moFilter = $(".employ-filter .left.mo_only"),
+	filterTop, filterHeight;
 
 $(function(){
 	scrolTop = $(window).scrollTop();
@@ -9,16 +11,12 @@ $(function(){
 	/* 페이지 리사이즈 이벤트 */
 	$(window).resize(function(){
 		windowW = window.innerWidth;
+		if(windowW <= 720) searchActiveFn();
 
-		if(windowW <= 720){
-			searchActiveFn();
-		}
+		mainClassSwiperFn();
 	});
 
 	/* 페이지 스크롤 이벤트 */
-	let moFilter = $(".employ-filter .left.mo_only");
-	let filterTop, filterHeight;
-
 	if(moFilter.length){
 		filterTop = moFilter.offset().top;
 		filterHeight = moFilter.innerHeight();
@@ -36,16 +34,20 @@ $(function(){
 	});
 
 	clickDefaultFn();
-
 	tabFn();
 	accordionFn();
-
 	inpSelectFn();
 
-	if(windowW <= 720){
-		searchActiveFn();
-	}
+	if(windowW <= 720) searchActiveFn();
+	employFilterFn();
+	datePickerFn();
 
+	//main swiper
+	mainBannerSwiperFn();
+	mainClassSwiperFn();
+});
+
+function employFilterFn(){
 	$(".employ-filter .search input").on("change keyup", function(){
 		let inputValue = $(this).val();
 
@@ -55,9 +57,7 @@ $(function(){
 			$(this).siblings(".btn-delete").removeClass("active");
 		}
 	});
-
-	datePickerFn();
-});
+}
 
 function datePickerFn(){
 	$.datepicker.setDefaults({
@@ -182,9 +182,11 @@ function inpSelectFn(){
 		let inpSelect = $(this).closest(".inp-select");
 		let $html = "<span class='value'>" + optionTxt + "</span>";
 
-		inpSelect.find(".inp-btn .placeholder").hide();
-		inpSelect.find(".inp-btn .value").remove();
-		inpSelect.find(".inp-btn").removeClass("active").append($html);
+		if( !$(this).parents(".inp-options").hasClass("only-link") ) {
+			inpSelect.find(".inp-btn .placeholder").hide();
+			inpSelect.find(".inp-btn .value").remove();
+			inpSelect.find(".inp-btn").removeClass("active").append($html);
+		}
 		inpSelect.find(".inp-options").stop().hide();
 	});
 
@@ -252,4 +254,27 @@ function closeEditMenu(){
 		$edit = $btn.parents(".edit-con");
 
 	$edit.removeClass("active");
+}
+
+function mainBannerSwiperFn(){
+	let swiperBanner = new Swiper(".main-banner .swiper", {
+		slidesPerView: "auto",
+		scrollbar: {
+			el: ".swiper-scrollbar",
+		},
+	});
+}
+
+let swiperClass = undefined;
+function mainClassSwiperFn(){
+
+	if(windowW <= 1200 && swiperClass === undefined){
+		swiperClass = new Swiper(".main-class .swiper", {
+			slidesPerView: "auto",
+			keyboardControl: true,
+		});
+	} else if(windowW > 1200  && swiperClass !== undefined) {
+		swiperClass.destroy();
+		swiperClass = undefined;
+	}
 }

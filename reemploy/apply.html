@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -112,96 +112,115 @@
 <!--// mob-nav -->
 
     <!-- contents -->
-    <div class="contents">
-        <div class="profile-info">
-            <div class="info-con">
-                <input type="text" class="datepicker">
-            </div>
-            <div class="item-con">
-                <p class="title">이력서 항목</p>
+    <div class="contents apply-form">
+        <div class="page-tit ta-left">
+            <h2>재취업지원서비스 신청</h2>
+            <p class="desc">워크위즈 재취업지원서비스 신청하기와 관련된 문의나 <br class="mo_only"/> 상담을 원하신다면 <br class="pc_only"/> 아래 신청서 작성 부탁드립니다.</p>
+        </div>
 
-                <div class="item-list">
-                    <div class="default-list">
-                        <dl>
-                            <dt>지원분야</dt>
-                            <dd>
-                                <p class="badge">필수</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>인적사항</dt>
-                            <dd>
-                                <p class="badge">필수</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>핵심역량</dt>
-                            <dd>
-                                <p class="badge">필수</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>경력사항</dt>
-                            <dd>
-                                <p class="badge">필수</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>주요업무 및 성과</dt>
-                            <dd>
-                                <p class="badge">필수</p>
-                            </dd>
-                        </dl>
-                        <dl class="option active">
-                            <dt>기타사항</dt>
-                            <dd>
-                                <button type="button" class="profile-btn"></button>
-                            </dd>
-                        </dl>
+        <div class="form-con">
+            <div class="content-box pd-m">
+                <div class="title">
+                    <h3>신청서 <span class="c-red">*</span></h3>
+                </div>
+                <div class="inp-list">
+                    <div class="inp required">
+                        <label class="inp-label">회사명</label>
+                        <div class="inp-group">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="회사명을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
                     </div>
-                    <div class="option-list">
-                        <p class="sub-title">역량기술서</p>
-                        <dl class="option">
-                            <dt>비전</dt>
-                            <dd>
-                                <button type="button" class="profile-btn"></button>
-                            </dd>
-                        </dl>
-                        <dl class="option">
-                            <dt>커뮤니케이션 스킬</dt>
-                            <dd>
-                                <button type="button" class="profile-btn"></button>
-                            </dd>
-                        </dl>
-                        <dl class="option">
-                            <dt>업무추진력</dt>
-                            <dd>
-                                <button type="button" class="profile-btn"></button>
-                            </dd>
-                        </dl>
-                        <dl class="option">
-                            <dt>경험 및 역할</dt>
-                            <dd>
-                                <button type="button" class="profile-btn"></button>
-                            </dd>
-                        </dl>
+
+                    <div class="inp required">
+                        <label class="inp-label">담당자 성함</label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="담당자 성함을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp required">
+                        <label class="inp-label">담당자 이메일</label>
+                        <div class="inp-group">
+                            <div class="inp-area">
+                                <input type="text" name="" placeholder="담당자 이메일을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <p class="desc-error">필수 정보입니다.</p>
+                    </div>
+
+                    <div class="inp textarea">
+                        <label class="inp-label">문의/요청 사항</label>
+                        <div class="inp-group ">
+                            <div class="inp-area">
+                                <textarea placeholder="문의/요청 사항을 입력해 주세요." ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="inp-checkbox-list line">
+                    <div class="inp-checkbox">
+                        <input type="checkbox" name="" id="chk03">
+                        <label for="chk03" class="inp-label">
+                            <span class="inp-checkbox-text">
+                                 <span class="c-blue underline">개인정보 수집 및 이용약관</span>에 동의합니다.
+                            </span>
+                        </label>
                     </div>
                 </div>
-            </div>
-            <div class="submit-con">
-                <div class="inner">
-                    <div class="left">
-                        <button type="button" class="preview-btn">미리보기/다운로드</button>
-                    </div>
-                    <div class="right">
-                        <button type="button" class="temporary-btn">임시저장</button>
-                        <button type="button" class="submit-btn">작성완료</button>
-                    </div>
+                <div class="page-btn pb-0">
+                    <button type="button" class="btn">신청하기</button>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- // contents -->
+
+    <!-- pop content -->
+    <div class="pop-wrap select-pop" data-pop="select-addr-01">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">서울</li>
+                <li class="option">경기</li>
+                <li class="option">인천</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-01')">취소</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap select-pop" data-pop="select-addr-02">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">노원구</li>
+                <li class="option">동작구</li>
+                <li class="option">마포구</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-02')">취소</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-wrap select-pop" data-pop="select-addr-03">
+        <div class="pop-inner">
+            <ul class="inp-options">
+                <li class="option">신대방동</li>
+                <li class="option">원종동</li>
+                <li class="option">대방동</li>
+            </ul>
+            <div class="pop-btn">
+                <button type="button" class="btn full btn-l square" onclick="popupCloseFn('select-addr-03')">취소</button>
+            </div>
+        </div>
+    </div>
+    <!-- //pop content -->
 
     <!-- footer -->
 <div class="footer">
@@ -225,8 +244,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -258,6 +290,21 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
 </div>
 
 </body>

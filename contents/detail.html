@@ -34,17 +34,17 @@
 <title></title>
 
 </head>
-<body>
+<body class="progress">
 <div class="wrap bg-white">
     <!-- header -->
-<div class="header fixed">
+<div class="header progress">
     <div class="inner">
         <div class="header-menu">
             <h1><a href="#"><img src="../assets/img/content/logo_w.png" alt=""></a></h1>
             <div class="mob-menu">
                 <div class="mypage">
                     <a href="#" class="login-btn">로그인</a>
-<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage_w.svg" alt=""></a>-->
+                    <!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage_w.svg" alt=""></a>-->
                 </div>
                 <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu_w.svg" alt=""></button>
             </div>
@@ -54,9 +54,9 @@
             <!-- nav -->
             <nav class="nav">
                 <ul class="gnb-list">
-                    <li class="active"><a href="#">컨텐츠</a></li>
+                    <li class="active"><a href="#">콘텐츠</a></li>
                     <li><a href="#">프로그램</a></li>
-                    <li><a href="#">체용관</a></li>
+                    <li><a href="#">채용관</a></li>
                     <li><a href="#">클래스</a></li>
                     <li><a href="#">커리어피트니스</a></li>
                 </ul>
@@ -67,16 +67,22 @@
             <div class="header-util">
                 <p class="mypage">
                     <a href="#" class="login-btn">로그인</a>
-<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                    <!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
                 </p>
                 <ul class="service-list">
-                   <li><a href="#">서비스 소개</a></li>
-                   <li><a href="#">재취업지원서비스</a></li>
+                    <li><a href="#">서비스 소개</a></li>
+                    <li><a href="#">재취업지원서비스</a></li>
                 </ul>
             </div>
             <!-- // header_util -->
         </div>
     </div>
+
+    <!--progress-bar-->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    <!--// progress-bar-->
 </div>
 <!--// header -->
 
@@ -111,8 +117,10 @@
 </div>
 <!--// mob-nav -->
 
+
+
     <!-- contents -->
-    <div class="detail-wrap">
+    <div class="detail-wrap contents-wrap">
         <div class="key-visual large">
             <div class="txt-box">
                 <p class="sub-txt">상상, 우리의 스토리</p>
@@ -122,48 +130,50 @@
                     <span>2023.09.26</span>
                 </p>
             </div>
-            <img src="..../assets/img/content/keyVisual_03.jpg" alt="" class="pc_img">
-            <img src="..../assets/img/content/mo_keyVisual_03.jpg" alt="" class="mo_img">
+            <img src="../assets/img/content/keyVisual_03.jpg" alt="" class="pc_img">
+            <img src="../assets/img/content/mo_keyVisual_03.jpg" alt="" class="mo_img">
         </div>
-        <div class="contents mb-0">
+        <div class="contents pb-0">
             <div class="detail-info">
                 <div class="info-box w701">
                     <div class="add-info">
                         <!-- 웹에디터 작성 영역 -->
-                        <img src="..../assets/img/content/img_contents_detail.jpg" alt="" class="pc_only img">
-                        <img src="..../assets/img/content/mo_img_contents_detail.jpg" alt="" class="mo_only img">
+                        <img src="../assets/img/content/img_contents_detail.jpg" alt="" class="pc_only img">
+                        <img src="../assets/img/content/mo_img_contents_detail.jpg" alt="" class="mo_only img">
                         <!-- //웹에디터 작성 영역 -->
-
-                        <hr class="hr">
-
-                        <p class="tit">추천 클래스</p>
-                        <ul>
-                            <li>✔️ <a href="#!">온라인 플랫폼을 활용한 매력적인 중장년 이미지 만들기 ></a></li>
-                            <li>✔️ <a href="#!">간단하지만 놓치고 있는 신중년 면접의 기술 ></a></li>
-                            <li>✔️ <a href="#!">[노션은 처음이지?] 매력적인 인재의 포트폴리오 ></a></li>
-                        </ul>
-
                     </div>
                     <div class="inquiry">
                         <p class="tit">담당자에게 문의해 보세요.</p>
                         <div class="txt-box">
                             <div class="img-box">
-                                <img src="..../assets/img/content/mypage_user.png" alt="">
+                                <img src="../assets/img/content/mypage_user.png" alt="">
                             </div>
                             <div class="info-box">
                                 <p class="name">
                                     김워크 <span>상상우리 에디터</span>
                                 </p>
-                                <p class="desc">
-                                    '중장년의 경험과 지혜가 사회혁신의 자원이 되게 하자'라는 <br/>
-                                    미셔늘 가지고 상상우리를 창업하여 경영하고 있다.
-                                </p>
-                                <p class="desc">
-                                    청년에서 시작하여 어느덧 중장년의 길로 접어들게 되었고, <br/>
-                                    이제는 당사자가 되어가면서 더 큰 사명감으로 활동하고 있다.
-                                </p>
+                                <div class="desc">
+                                    <p>
+                                        '중장년의 경험과 지혜가 사회혁신의 자원이 되게 하자'라는 <br />
+                                        미셔늘 가지고 상상우리를 창업하여 경영하고 있다.
+                                    </p>
+                                    <p>
+                                        청년에서 시작하여 어느덧 중장년의 길로 접어들게 되었고, <br />
+                                        이제는 당사자가 되어가면서 더 큰 사명감으로 활동하고 있다.
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="btn-group pb-0 flex-between">
+                        <a href="#!" class="btn line btn-m">
+                            <i class="icon icon-list"></i>
+                            <span>목록으로</span>
+                        </a>
+                        <a href="#!" class="btn line btn-m next">
+                            <i class="icon icon-upload"></i>
+                            <span>공유하기</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -173,61 +183,88 @@
                 <div class="sub-tit ta-center mb-4">
                     <h2 class="tit">추천 채용공고</h2>
                 </div>
-                <div class="employ-list">
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <!-- badge 마감기한 D-10 이내 표기: bg-blue 클래스 추가, 채용 기간 표기: bg-black 클래스 추가, 마감 표기: bg-gary 클래스 추가 -->
-                                <span class="badge small bg-blue">D-2</span>
-                                <img src="..../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">워크위즈 UX/UI 프로덕트 기획자 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
+                <div class="thumb-box-list type2">
+                    <div class="thumb-list">
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img-box">
+                                    <img src="../assets/img/content/img_contents_thumb_01.jpg" alt="">
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <span class="badge small bg-blue">D-2</span>
-                                <img src="..../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">MG새마을금고 데이터분석가 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
+                                <div class="txt-box">
+                                    <p class="sort">
+                                        <strong><i class="icon icon-employ"></i> 취업</strong>
+                                        <span>2023.01.01</span>
+                                    </p>
+                                    <h3 class="tit">요즘 시대 혁신의 인재상, <br/> '라이트피플'(Right People)</h3>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#!">
-                            <div class="img-box">
-                                <span class="badge small bg-black">~12.30</span>
-                                <img src="..../assets/img/content/thumb_employ_sample.jpg" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <p class="sort">중견기업</p>
-                                <p class="tit">장비개발기업 개발 QA 그룹장 채용</p>
-                                <div class="desc">
-                                    <p><span>기획 전략</span> <span>서울 · 강남구</span></p>
-                                    <p>출처 : <em>잡코리아</em></p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img-box">
+                                    <img src="../assets/img/content/img_contents_thumb_02.jpg" alt="">
                                 </div>
-                            </div>
-                        </a>
+                                <div class="txt-box">
+                                    <p class="sort">
+                                        <strong><i class="icon icon-learning"></i> 학습</strong>
+                                        <span>2023.01.01</span>
+                                    </p>
+                                    <h3 class="tit">'성격유형'에 MBTI가 있다면, <br/>  '진로성향'엔 CIG16이 있다</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img-box">
+                                    <img src="../assets/img/content/img_contents_thumb_03.jpg" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="sort">
+                                        <strong><i class="icon icon-plan"></i> 생애설계</strong>
+                                        <span>2023.01.01</span>
+                                    </p>
+                                    <h3 class="tit">"인생2막걸리", <br/>  막걸리처럼 익어가는 인색 2막</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="btn-group">
+                <div class="btn-group pb-0">
                     <button type="button" class="btn line btn-m bg-white">
                         <i class="icon icon-plus"></i> <span>더보기</span>
                     </button>
+                </div>
+            </div>
+        </div>
+        <div class="advertise-banner bg-gray">
+            <div class="inner">
+                <div class="banner">
+                    <div class="txt-box">
+                        <h3 class="tit">취업성공 100일 프로젝트, 커리어피트니스</h3>
+                        <p class="desc">취업준비,혼자힘드셨죠? <br class="mo_only"/> 취업도 이제  PT받으세요.</p>
+                        <button type="button" class="btn btn-m bg-black">
+                            <span>더 알아보기</span> <i class="icon icon-right"></i>
+                        </button>
+                    </div>
+                    <div class="img-obj-box">
+                        <img src="../assets/img/content/contents_banner_obj.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-banner">
+            <div class="inner">
+                <div class="sub-tit ta-center">
+                    <h2 class="tit">더 많은 정보를 <br class="mo_only"/> 뉴스레터로 받아보세요</h2>
+                </div>
+                <div class="inp">
+                    <div class="inp-group">
+                        <div class="inp-area">
+                            <input type="text" name="" placeholder="이메일을 입력해 주세요." value="">
+                        </div>
+                        <button type="button" class="btn btn-m bg-black">뉴스레터 신청하기</button>
+                    </div>
+                    <p class="notice-txt">구독할 경우 개인정보 수집·이용과 <br class="mo_only"/> 광고성 정보 수신에 동의하게 됩니다.</p>
                 </div>
             </div>
         </div>
@@ -276,8 +313,21 @@
                     <dd>02-1234-1234</dd>
                 </dl>
             </div>
-            <div class="select">
-                패밀리사이트
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="address-con">
@@ -309,7 +359,34 @@
 <!--// footer -->
 
 
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
 </div>
+<!-- //pop content -->
+</div>
+
+<script>
+    window.addEventListener("scroll", function () {
+        const scrollTop = document.querySelector("html").scrollTop;
+        const scrollHeight = document.querySelector("html").scrollHeight;
+        const clientHeight = document.querySelector("html").clientHeight;
+
+        const progress = scrollTop / (scrollHeight - clientHeight) * 100;
+
+        document.querySelector(".progress-bar").style.width = progress + "%";
+    });
+</script>
 
 </body>
 </html>
