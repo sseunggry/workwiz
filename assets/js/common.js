@@ -13,7 +13,9 @@ $(function(){
 		windowW = window.innerWidth;
 		if(windowW <= 720) searchActiveFn();
 
+		mainContentSwiperFn();
 		mainClassSwiperFn();
+		mainEmploySwiperFn();
 	});
 
 	/* 페이지 스크롤 이벤트 */
@@ -44,7 +46,9 @@ $(function(){
 
 	//main swiper
 	mainBannerSwiperFn();
+	mainContentSwiperFn();
 	mainClassSwiperFn();
+	mainEmploySwiperFn();
 });
 
 function employFilterFn(){
@@ -256,8 +260,10 @@ function closeEditMenu(){
 	$edit.removeClass("active");
 }
 
+let swiperBanner, swiperClass = undefined, swiperContent = undefined;
+
 function mainBannerSwiperFn(){
-	let swiperBanner = new Swiper(".main-banner .swiper", {
+	swiperBanner = new Swiper(".main-banner .swiper", {
 		slidesPerView: "auto",
 		scrollbar: {
 			el: ".swiper-scrollbar",
@@ -265,16 +271,50 @@ function mainBannerSwiperFn(){
 	});
 }
 
-let swiperClass = undefined;
-function mainClassSwiperFn(){
+function mainContentSwiperFn(){
+	if(windowW <= 1200 && swiperContent === undefined){
+		swiperContent = new Swiper(".main-contents .swiper", {
+			slidesPerView: "auto",
+		});
+	} else if(windowW > 1200  && swiperContent !== undefined) {
+		swiperContent.destroy();
+		swiperContent = undefined;
+	}
+}
 
+function mainClassSwiperFn(){
 	if(windowW <= 1200 && swiperClass === undefined){
 		swiperClass = new Swiper(".main-class .swiper", {
 			slidesPerView: "auto",
-			keyboardControl: true,
 		});
 	} else if(windowW > 1200  && swiperClass !== undefined) {
 		swiperClass.destroy();
 		swiperClass = undefined;
 	}
+}
+
+function mainEmploySwiperFn(){
+	if(windowW > 1200){
+		pcEmploySwiper();
+	} else{
+		moEmploySwiper();
+	}
+}
+
+let pcSwiperEmploy,moSwiperEmploy;
+
+function pcEmploySwiper(){
+	pcSwiperEmploy = new Swiper(".main-employ .swiper.pc_only", {
+		slidesPerView: "auto",
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+
+function moEmploySwiper(){
+	moSwiperEmploy = new Swiper(".main-employ .swiper.mo_only", {
+		slidesPerView: "auto",
+	});
 }

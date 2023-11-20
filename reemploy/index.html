@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap bg-white">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">콘텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">채용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents wide reemploy">
+        <section class="sec-kv">
+            <div class="txt-box">
+                <p class="desc"><img src="../assets/img/content/no_1.png" alt="">4050 전문 커리어 플랫폼</p>
+                <h2 class="tit">
+                    <img src="../assets/img/content/reemploy_visual_tit.svg" alt="">
+                </h2>
+            </div>
+        </section>
+
+        <section class="sec-01">
+            <div class="inner">
+                <div class="banner">
+                    <h4><span>혹시,</span>지금 이런 고민들 하고 계시나요?</h4>
+                    <p class="img-con">
+                        <img src="../assets/img/content/reemploy_sec_01.png" alt="" class="pc_img">
+                        <img src="../assets/img/content/mo_reemploy_sec_01.png" alt="" class="mo_img">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-02">
+            <div class="inner">
+                <div class="problem-con">
+                    <div class="tit-box">
+                        <p class="sub-txt en">PROBLEM</p>
+                        <h3 class="tit-l">
+                            4050 경력인재들의<br/>
+                            다양한 고민들을 모았습니다.
+                        </h3>
+                    </div>
+                    <p class="img_01">
+                        <img src="../assets/img/content/reemploy_sec_obj_01.png" alt="">
+                    </p>
+                    <div class="problem-list">
+                        <div>
+                            <p class="txt">저임금의 단순 일자리 말고 저의 경력을 살릴 수 있는 <span>최적의 일자리</span>는 없을까요?</p>
+                            <p class="txt">앞으로 언제까지 일할 수 있을지 걱정이 앞서네요. <span>새로운 일</span>을 시작하기 위한 준비가 필요해요.</p>
+                            <p class="txt"><span>재취업</span>을 위해서는 무엇을 준비해야 할까요? 너무 막막합니다...</p>
+                            <p class="img_02">
+                                <img src="../assets/img/content/reemploy_sec_obj_02.png" alt="">
+                            </p>
+                            <p class="txt"><span>같이 고민하고 지원</span>해줄 사람들이 필요한데 어디서 찾을 수 있을까?</p>
+                            <p class="txt"><span>이직을 준비</span>하고 있는데 어떻게 준비해야 할지 모르겠어요.</p>
+                            <p class="txt">퇴직이후 창업을 시작했는데 쉽지않네요. <span>조언이 필요</span>합니다.</p>
+                        </div>
+                    </div>
+                    <p class="img_03">
+                        <img src="../assets/img/content/reemploy_sec_obj_03.png" alt="">
+                    </p>
+                    <div class="tit-box">
+                        <h3 class="tit-l c-gray">
+                            이러한 고민들을<br/>
+                            <span>한번에 해결</span>할 수 있는
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-03">
+            <div class="inner">
+                <div class="solution-con"></div>
+            </div>
+        </section>
+
+    </div>
+    <!-- // contents -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
+</div>
+
+</body>
+</html>

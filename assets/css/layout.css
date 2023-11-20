@@ -24,6 +24,17 @@
 	padding-bottom: 40px;
 }
 
+.contents.wide {
+	padding: 0;
+	max-width: none;
+}
+
+.contents.wide .inner {
+	margin: 0 auto;
+	padding: 0 48px;
+	max-width: 1416px;
+}
+
 .content-box {
 	margin-top: 60px;
 	padding: 24px;

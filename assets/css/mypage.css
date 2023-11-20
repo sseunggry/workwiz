@@ -3136,4 +3136,182 @@
 		width: 5.56vw;
 	}
 }
+/*
+* reemploy style
+ */
+.reemploy .sec-kv {
+	position: relative;
+	height: 680px;
+	background: url("../img/content/visual_reemploy.jpg") no-repeat center/cover;
+}
+
+.reemploy .sec-kv .txt-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.reemploy .sec-kv .txt-box .tit img {
+	margin-top: 8px;
+	width: 458px;
+}
+
+.reemploy .sec-kv .txt-box .desc {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.reemploy .sec-kv .txt-box .desc img {
+	margin-right: 9px;
+	width: 74px;
+}
+
+.reemploy .sec-01 .banner {
+	padding: 80px 0 200px;
+}
+
+.reemploy .sec-01 .banner h4 {
+	margin-bottom: 32px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.reemploy .sec-01 .banner h4 span {
+	display: block;
+	color: #D2DBE3;
+}
+
+.reemploy .sec-01 .banner .img-con {
+	margin: 0 auto;
+	max-width: 1140px;
+	width: 100%;
+}
+
+.reemploy .sec-01 .banner .img-con .mo_img {
+	display: none;
+}
+
+.reemploy .sec-02 .problem-con {
+	position: relative;
+	padding-bottom: 272px;
+}
+
+.reemploy .sec-02 .problem-con::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	height: 280px;
+	background-color: #D8DDE2;
+}
+
+.reemploy .sec-02 .problem-con .tit-box .tit-l {
+	font-size: 40px;
+}
+
+.reemploy .sec-02 .problem-con .tit-box .c-gray {
+	color: #D2DBE3;
+}
+
+.reemploy .sec-02 .problem-con .tit-box .c-gray span {
+	color: #2E3337;
+}
+
+.reemploy .sec-02 .problem-con .img_01 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 491px;
+}
+
+.reemploy .sec-02 .problem-con .img_02 {
+	position: absolute;
+	left: 0;
+	top: 290px;
+	width: 346px;
+}
+
+.reemploy .sec-02 .problem-con .img_03 {
+	position: absolute;
+	right: 50px;
+	bottom: 220px;
+	width: 367px;
+}
+
+.reemploy .sec-02 .problem-con .problem-list {
+	padding: 280px 0 240px;
+	text-align: right;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div {
+	display: inline-block;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div .txt {
+	position: relative;
+	padding-left: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #D2DBE3;
+	text-align: left;
+	letter-spacing: -0.05rem;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div .txt span {
+	color: #2E3337;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div .txt::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #6C7D8D;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div .txt {
+	margin-bottom: 20px;
+}
+
+.reemploy .sec-02 .problem-con .problem-list div .txt:last-of-type {
+	margin-bottom: 0;
+}
+
+.reemploy .sec-03 {
+	padding: 140px 0;
+	background: url("../img/content/visual_reemploy_solution.jpg") no-repeat center/cover;
+}
+
+@media all and (max-width: 960px) {
+	.reemploy .sec-01 .banner .img-con .pc_img {
+		display: none;
+	}
+
+	.reemploy .sec-01 .banner .img-con .mo_img {
+		display: block;
+		margin: 0 auto;
+		max-width: 640px;
+		width: 100%;
+	}
+}
 /*# sourceMappingURL=maps/mypage.css.map */

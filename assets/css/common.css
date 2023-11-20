@@ -622,6 +622,63 @@ body.popView {
 	margin-top: 0;
 }
 
+.tit-box {
+	margin-bottom: 48px;
+}
+
+.tit-box .tit-xl {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.14;
+	color: #000;
+}
+
+.tit-box .tit-l {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #000;
+}
+
+.tit-box .tit-m {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #000;
+}
+
+.tit-box .tit-s {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #000;
+}
+
+.tit-box .sub-txt {
+	margin-bottom: 11px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: -2.5px;
+	color: #3575F6;
+}
+
+.tit-box .sub-txt.en {
+	margin-bottom: 13px;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 10px;
+	color: #3575F6;
+}
+
+.tit-box .desc {
+	margin-top: 25px;
+	font-size: 20px;
+	color: #7C828B;
+	letter-spacing: -2.5px;
+}
+
 .btn-group {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -883,13 +940,6 @@ body.popView {
 	        align-items: center;
 }
 
-.tab-list li {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-	height: 68px;
-}
-
 .tab-list li button {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -923,15 +973,19 @@ body.popView {
 	border-bottom: 1px solid #F4F5F8;
 }
 
+.tab-line li {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	height: 68px;
+}
+
 .tab-line li.active {
 	border-bottom: 3px solid #3575F6;
 }
 
 .tab-round li {
 	margin-right: 12px;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
 }
 
 .tab-round li:last-child {
