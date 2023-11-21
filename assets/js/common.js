@@ -6,7 +6,7 @@ let scrolTop = "",
 
 $(function(){
 	scrolTop = $(window).scrollTop();
-	windowW = window.innerWidth;
+	// windowW = window.innerWidth;
 
 	/* 페이지 리사이즈 이벤트 */
 	$(window).resize(function(){
@@ -283,11 +283,11 @@ function mainContentSwiperFn(){
 }
 
 function mainClassSwiperFn(){
-	if(windowW <= 1200 && swiperClass === undefined){
+	if(windowW <= 1500 && swiperClass === undefined){
 		swiperClass = new Swiper(".main-class .swiper", {
 			slidesPerView: "auto",
 		});
-	} else if(windowW > 1200  && swiperClass !== undefined) {
+	} else if(windowW > 1500  && swiperClass !== undefined) {
 		swiperClass.destroy();
 		swiperClass = undefined;
 	}
