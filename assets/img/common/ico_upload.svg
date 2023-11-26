@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path data-name="icon area" fill="none" d="M0 0h20v20H0z"/><g data-name="Icon feather-share" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path data-name="패스 117151" d="M2.36 12.496v4.036c0 .557.88 1.009 1.965 1.009h11.787c1.085 0 1.965-.452 1.965-1.009v-4.036"/><path data-name="패스 117152" d="M14.147 6.387l-3.929-3.929-3.929 3.929"/><path data-name="패스 117153" d="M10.218 2.458v10.038"/></g></svg>
+<svg id="share" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="icon_area" data-name="icon area" width="20" height="20" fill="none"/>
+  <g id="Icon_feather-share" data-name="Icon feather-share" transform="translate(2.36 2.458)">
+    <path id="패스_117151" data-name="패스 117151" d="M6,18v4.036c0,.557.88,1.009,1.965,1.009H19.752c1.085,0,1.965-.452,1.965-1.009V18" transform="translate(-6 -7.962)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_117152" data-name="패스 117152" d="M19.858,6.929,15.929,3,12,6.929" transform="translate(-8.071 -3)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_117153" data-name="패스 117153" d="M18,3V13.038" transform="translate(-10.142 -3)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

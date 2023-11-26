@@ -1299,8 +1299,32 @@
 
 .fitness .sec-kv {
 	position: relative;
+	padding: 0;
+}
+
+.fitness .sec-kv .img-box {
+	overflow: hidden;
+	position: relative;
 	height: 1000px;
-	background: url("../img/content/visual_fitness.jpg") no-repeat center/cover;
+}
+
+.fitness .sec-kv .img-box::before {
+	content: "";
+	display: block;
+	width: 100%;
+	padding-top: 52%;
+}
+
+.fitness .sec-kv .img-box img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .fitness .sec-kv .txt-box {
@@ -1310,7 +1334,13 @@
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
+	margin: 0 auto;
+	padding: 0 48px;
+	max-width: 1416px;
+	width: 100%;
 	text-align: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .fitness .sec-kv .txt-box .tit {
@@ -1321,9 +1351,8 @@
 
 .fitness .sec-kv .txt-box .tit img {
 	margin-top: 2px;
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
+	max-width: 686px;
+	width: 100%;
 }
 
 .fitness .sec-kv .txt-box .desc {
@@ -1356,6 +1385,7 @@
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	padding: 16px 24px;
+	min-width: 432px;
 	color: #fff;
 	border-radius: 36px;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -1372,7 +1402,7 @@
 	font-size: 32px;
 	font-weight: 700;
 	color: #D2DBE3;
-	letter-spacing: -2.5px;
+	letter-spacing: -0.25px;
 }
 
 .fitness .sec-01 .txt-list li:last-child {
@@ -1389,6 +1419,10 @@
 
 .fitness .sec-02 {
 	background-color: #e9edf8;
+}
+
+.fitness .sec-02 .tit-box {
+	text-align: center;
 }
 
 .fitness .sec-02 .info-list {
@@ -1409,7 +1443,6 @@
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
-	max-width: 424px;
 	width: 100%;
 	text-align: center;
 	background-color: #fff;
@@ -1677,9 +1710,9 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: strech;
-	    -ms-flex-align: strech;
-	        align-items: strech;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
 	counter-reset: number 0;
 }
 
@@ -1751,6 +1784,9 @@
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .fitness .sec-05 .inner {
@@ -1759,6 +1795,7 @@
 
 .fitness .sec-05 .tit-box {
 	margin-bottom: 75px;
+	text-align: center;
 }
 
 .fitness .sec-05 .activity-list {
@@ -2032,6 +2069,238 @@
 	color: #3575F6;
 }
 
+.fitness .sec-07 {
+	background-color: #101e51;
+}
+
+.fitness .sec-07 .level-list {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	counter-reset: number 0;
+}
+
+.fitness .sec-07 .level-list::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 10px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 80%;
+	height: 1px;
+	background-color: #fff;
+}
+
+.fitness .sec-07 .level-list dl {
+	text-align: center;
+	color: #fff;
+}
+
+.fitness .sec-07 .level-list dl::before {
+	content: "";
+	position: relative;
+	display: inline-block;
+	margin-bottom: 37px;
+	width: 16px;
+	height: 16px;
+	background-color: #101e51;
+	border: 2px solid #B9C0C6;
+	border-radius: 50%;
+}
+
+.fitness .sec-07 .level-list dt {
+	margin-bottom: 12px;
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: -0.25px;
+}
+
+.fitness .sec-07 .level-list dt::before {
+	content: "STEP " counter(number);
+	counter-increment: number;
+	display: block;
+	margin: 0 auto 24px;
+	padding: 6px 16px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	font-size: 16px;
+	font-weight: 700;
+	color: #3575F6;
+	letter-spacing: 0;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.fitness .sec-07 .level-list dl.active dt::before {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #366FF6), to(#3F40F7));
+	background: -webkit-linear-gradient(top, #366FF6 0, #3F40F7 100%);
+	background: linear-gradient(to bottom, #366FF6 0, #3F40F7 100%);
+	color: #fff;
+}
+
+.fitness .sec-07 .level-list dd {
+	color: rgba(216, 221, 226, 0.8);
+}
+
+.fitness .sec-08 {
+	padding: 163px 0 160px;
+	background: url("../img/content/fitness_sec08_bg.jpg") no-repeat center/cover;
+}
+
+.fitness .sec-08 .tit-box {
+	margin-bottom: 0;
+}
+
+.fitness .sec-08 .btn-group {
+	padding: 60px 0 0;
+}
+
+.fitness .sec-08 .btn-group .btn + .btn {
+	margin-left: 12px;
+}
+
+.fitness .sec-08 .btn-group .btn {
+	padding: 0 26px 0 32px;
+}
+
+.fitness .sec-08 .btn-group .btn.line.c-primary {
+	background-color: #fff;
+}
+
+.fitness .sec-09 {
+	background-color: #232D46;
+}
+
+.fitness .sec-09 .review-list {
+	margin: 0 auto;
+}
+
+.fitness .sec-09 .review-list .swiper {
+	overflow: hidden;
+}
+
+.fitness .sec-09 .review-list .swiper-slide {
+	padding: 24px 24px 16px;
+	margin-right: 24px;
+	width: 312px;
+	background-color: #fff;
+	border-radius: 16px;
+}
+
+.fitness .sec-09 .review-list .swiper-slide:last-child {
+	margin-right: 0;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .info-box .group {
+	font-size: 16px;
+	font-weight: 700;
+	color: #3575f6;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .info-box .crew {
+	font-size: 16px;
+	color: #000;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .info-box .crew strong {
+	font-weight: 700;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .info-box ~ .txt-box {
+	margin-top: 18px;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .info-box ~ .txt-box p {
+	overflow: hidden;
+	display: -webkit-box;
+	height: 222px;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 10;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .img-box {
+	overflow: hidden;
+	position: relative;
+	margin-top: 12px;
+	width: 100%;
+	min-height: 148px;
+	background-color: #ddd;
+	border-radius: 12px;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .img-box::before {
+	content: "";
+	display: block;
+	padding-top: 56%;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .img-box img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .img-box ~ .txt-box {
+	margin-top: 12px;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .img-box ~ .txt-box p {
+	overflow: hidden;
+	display: -webkit-box;
+	height: 68px;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .txt-box {
+	font-size: 16px;
+	color: #7C828B;
+	line-height: 1.4;
+	letter-spacing: -0.25px;
+	word-break: keep-all;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .txt-box::before {
+	content: "";
+	display: block;
+	margin-bottom: 6px;
+	width: 18px;
+	height: 12px;
+	background: url("../img/common/ico_comment.svg") no-repeat center/100% auto;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .txt-box::after {
+	content: "";
+	display: block;
+	margin: 12px 0;
+	width: 100%;
+	height: 1px;
+	background-color: #D8DDE2;
+	border-radius: 24px;
+}
+
+.fitness .sec-09 .review-list .swiper-slide .btn.text span ~ .icon {
+	margin-left: 2px;
+}
+
+.fitness .sec-09 .btn-group {
+	padding: 32px 0 0;
+}
+
 @media all and (max-width: 1400px) {
 	.fitness .sec-02 .info-list .item {
 		padding: 24px 30px 40px;
@@ -2080,8 +2349,29 @@
 	.fitness .sec-03 .service-02 .info-list {
 		padding: 0 20px;
 	}
+
+	.fitness .sec-06 .program-list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.fitness .sec-06 .program-list .item {
+		margin-right: 0;
+		margin-bottom: 32px;
+		width: 100%;
+	}
+
+	.fitness .sec-06 .program-list .item:last-child {
+		margin-bottom: 0;
+	}
 }
 @media all and (max-width: 960px) {
+	.fitness .sec-kv .txt-box .tit {
+		font-size: 46px;
+	}
+
 	.fitness .sec-03 .banner {
 		height: 724px;
 		background-image: url("../img/content/mo_fitness_sec03_banner.jpg");
@@ -2090,7 +2380,618 @@
 	.fitness .sec-03 .service-01 .info-box {
 		grid-template-columns: auto;
 	}
+
+	.fitness .sec-03 .service-02 .info-list {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin-bottom: -32px;
+		padding: 0 56px;
+	}
+
+	.fitness .sec-03 .service-02 .info-list li {
+		margin-bottom: 32px;
+		width: 48%;
+	}
+
+	.fitness .sec-04 .coaching-list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.fitness .sec-04 .coaching-list li {
+		margin-bottom: 16px;
+		margin-right: 0;
+	}
+
+	.fitness .sec-04 .coaching-list li:last-child {
+		margin-bottom: 0;
+	}
+
+	.fitness .sec-04 .coaching-list li p {
+		padding: 48px;
+	}
+
+	.fitness .sec-04 .coaching-list li .img-box .pc_only {
+		display: none;
+	}
+
+	.fitness .sec-04 .coaching-list li .img-box .mo_only {
+		display: block;
+	}
+
+	.fitness .sec-04 .coaching-list li .img-box::before {
+		padding-top: 84.6%;
+	}
+
+	.fitness .sec-05 .activity-list {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		margin-bottom: -32px;
+		padding: 0 80px;
+	}
+
+	.fitness .sec-05 .activity-list li {
+		margin-right: 12%;
+		margin-bottom: 32px;
+		width: 44%;
+	}
+
+	.fitness .sec-05 .activity-list li:nth-child(2n) {
+		margin-right: 0;
+	}
 }
+@media all and (max-width: 720px) {
+	.fitness section {
+		padding: 96px 0;
+	}
+
+	.fitness .notice-txt {
+		font-size: 36px;
+	}
+
+	.fitness .notice-txt::before {
+		margin-right: 8px;
+		width: 48px;
+		height: 48px;
+		background-color: #3575F6;
+	}
+
+	.fitness .notice-txt span {
+		color: #3575F6;
+	}
+
+	.fitness .sec-kv .img-box {
+		height: 1100px;
+	}
+
+	.fitness .sec-kv .img-box::before {
+		padding-top: 153%;
+	}
+
+	.fitness .sec-kv .txt-box {
+		padding: 0 48px;
+		top: initial;
+		bottom: 230px;
+		-webkit-transform: translate(-50%, 0);
+		    -ms-transform: translate(-50%, 0);
+		        transform: translate(-50%, 0);
+	}
+
+	.fitness .sec-kv .txt-box .tit {
+		font-size: 48px;
+		letter-spacing: -0.25px;
+	}
+
+	.fitness .sec-kv .txt-box .tit img {
+		margin-top: 8px;
+		max-width: 624px;
+	}
+
+	.fitness .sec-kv .txt-box .desc {
+		margin-top: 40px;
+		font-size: 32px;
+		line-height: 1.5;
+	}
+
+	.fitness .sec-kv .txt-box .btn {
+		margin-top: 64px;
+		padding: 0 48px 0 20px;
+		height: 96px;
+		font-size: 28px;
+	}
+
+	.fitness .sec-kv .txt-box .btn .icon-play {
+		margin-right: 24px;
+		width: 56px;
+		height: 56px;
+	}
+
+	.fitness .sec-kv .notice-txt {
+		position: initial;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-transform: translateX(0);
+		    -ms-transform: translateX(0);
+		        transform: translateX(0);
+		padding: 48px;
+		width: 100%;
+		color: #141618;
+		border-radius: 0;
+		background-color: #F4F5F8;
+		-webkit-backdrop-filter: blur(0);
+		backdrop-filter: blur(0);
+	}
+
+	.fitness .sec-01 {
+		padding: 96px 0;
+	}
+
+	.fitness .sec-01 .txt-list li {
+		margin-bottom: 0;
+		font-size: 40px;
+		letter-spacing: -0.25px;
+		line-height: 1.4;
+	}
+
+	.fitness .sec-02 .tit-box {
+		text-align: left;
+	}
+
+	.fitness .sec-02 .info-list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.fitness .sec-02 .info-list .item {
+		margin-right: 0;
+		margin-bottom: 40px;
+		padding: 32px 48px 40px;
+		max-width: 100%;
+		width: 100%;
+		border-radius: 32px;
+	}
+
+	.fitness .sec-02 .info-list .item .txt-box::before {
+		margin: 0 auto 32px;
+		width: 360px;
+		height: 240px;
+	}
+
+	.fitness .sec-02 .info-list .item .txt-box span {
+		font-size: 32px;
+	}
+
+	.fitness .sec-02 .info-list .item .txt-box .num {
+		margin-top: 12px;
+		font-size: 48px;
+	}
+
+	.fitness .sec-02 .info-list .item .txt-box .num strong {
+		margin-right: 8px;
+		font-size: 80px;
+	}
+
+	.fitness .sec-02 .info-list .item .txt-box .num .icon-up {
+		margin-top: -6px;
+		margin-left: 16px;
+		width: 56px;
+		height: 56px;
+	}
+
+	.fitness .sec-02 .info-list .item .desc-box {
+		margin-top: 24px;
+		padding-top: 32px;
+		border-top-width: 2px;
+	}
+
+	.fitness .sec-02 .info-list .item .desc-box .desc {
+		font-size: 32px;
+	}
+
+	.fitness .sec-02 .info-list .item .desc-box .desc-small {
+		margin-top: 4px;
+		font-size: 28px;
+	}
+
+	.fitness .sec-02 .info-list .item .desc-box .desc-small span::after {
+		content: ":";
+		margin: 0 4px 0;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		vertical-align: text-bottom;
+		color: #B9C0C6;
+		background-color: transparent;
+	}
+
+	.fitness .sec-02 .info-list .item .desc-box .desc-small span:last-child::after {
+		display: none;
+	}
+
+	.fitness .sec-03 .banner {
+		height: 724px;
+	}
+
+	.fitness .sec-03 .banner .txt-box {
+		bottom: 80px;
+		padding: 0 48px;
+	}
+
+	.fitness .sec-03 .banner .txt-box span {
+		font-size: 32px;
+	}
+
+	.fitness .sec-03 .banner .txt-box p {
+		margin-top: 16px;
+		font-size: 56px;
+	}
+
+	.fitness .sec-03 .service-01 {
+		padding-top: 120px;
+	}
+
+	.fitness .sec-03 .service-01 .info-box {
+		grid-template-columns: auto;
+		gap: 32px;
+	}
+
+	.fitness .sec-03 .service-01 .info-box li {
+		border-radius: 24px;
+	}
+
+	.fitness .sec-03 .service-01 .info-box li p {
+		padding: 48px;
+		font-size: 32px;
+	}
+
+	.fitness .sec-03 .service-02 {
+		padding: 160px 0 368px;
+		background: url("../img/content/mo_fitness_sec03_bg_02.png") no-repeat center bottom/contain;
+	}
+
+	.fitness .sec-03 .service-02 .tit-box {
+		margin-bottom: 64px;
+	}
+
+	.fitness .sec-03 .service-02 .info-list {
+		margin-bottom: -64px;
+		padding: 0 24px;
+	}
+
+	.fitness .sec-03 .service-02 .info-list li {
+		margin-bottom: 64px;
+		width: 44%;
+		font-size: 32px;
+	}
+
+	.fitness .sec-03 .service-02 .info-list li::before {
+		margin: 0 auto 24px;
+		width: 172px;
+		height: 172px;
+	}
+
+	.fitness .sec-04 .coaching-list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.fitness .sec-04 .coaching-list li {
+		margin-bottom: 16px;
+		border-radius: 32px;
+	}
+
+	.fitness .sec-04 .coaching-list li:last-child {
+		margin-bottom: 0;
+	}
+
+	.fitness .sec-04 .coaching-list li p {
+		padding: 48px;
+		font-size: 40px;
+	}
+
+	.fitness .sec-04 .coaching-list li p::before {
+		margin-bottom: 24px;
+		width: 48px;
+		height: 48px;
+		font-size: 32px;
+		border-radius: 12px;
+	}
+
+	.fitness .sec-05 .tit-box {
+		margin-bottom: 75px;
+		text-align: left;
+	}
+
+	.fitness .sec-05 .activity-list {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		margin-bottom: -32px;
+		padding: 0 12px;
+	}
+
+	.fitness .sec-05 .activity-list li {
+		margin-right: 2%;
+		margin-bottom: 64px;
+		width: 49%;
+		font-size: 32px;
+		letter-spacing: -0.25px;
+	}
+
+	.fitness .sec-05 .activity-list li small {
+		margin-top: 8px;
+		font-size: 28px;
+	}
+
+	.fitness .sec-05 .activity-list li::before {
+		margin-bottom: 32px;
+		width: 184px;
+		height: 140px;
+	}
+
+	.fitness .sec-06 .tit-box .tit-l {
+		letter-spacing: -2px;
+	}
+
+	.fitness .sec-06 .program-list .item {
+		margin-bottom: 32px;
+		padding: 48px 48px 0;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+		border-radius: 24px;
+		-webkit-box-shadow: 0 10px 20px 0 rgba(0, 37, 106, 0.1);
+		        box-shadow: 0 10px 20px 0 rgba(0, 37, 106, 0.1);
+	}
+
+	.fitness .sec-06 .program-list .item .txt-box {
+		padding-bottom: 40px;
+		border-bottom-width: 2px;
+	}
+
+	.fitness .sec-06 .program-list .item .txt-box::before {
+		width: 80px;
+		height: 80px;
+	}
+
+	.fitness .sec-06 .program-list .item .txt-box .tit {
+		margin: 12px 0;
+		font-size: 72px;
+	}
+
+	.fitness .sec-06 .program-list .item .txt-box .desc {
+		font-size: 32px;
+		font-weight: 500;
+	}
+
+	.fitness .sec-06 .program-list .item .list {
+		padding: 40px 0;
+	}
+
+	.fitness .sec-06 .program-list .item .list li {
+		margin-bottom: 12px;
+		font-size: 28px;
+	}
+
+	.fitness .sec-06 .program-list .item .list li::before {
+		margin-right: 16px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.fitness .sec-06 .program-list .item .price {
+		margin: 0 -48px;
+		padding: 22px 48px 48px;
+	}
+
+	.fitness .sec-06 .program-list .item .price dl {
+		font-size: 24px;
+		letter-spacing: -0.25px;
+	}
+
+	.fitness .sec-06 .program-list .item .price dd.num {
+		font-size: 28px;
+	}
+
+	.fitness .sec-06 .program-list .item .price dd.num strong {
+		margin-right: 8px;
+		font-size: 72px;
+	}
+
+	.fitness .sec-06 .program-list .item .price dd.num span {
+		margin-top: 6px;
+	}
+
+	.fitness .sec-06 .notice-txt {
+		margin-top: 48px;
+	}
+
+	.fitness .sec-07 .level-list {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		counter-reset: number 0;
+	}
+
+	.fitness .sec-07 .level-list::before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		width: 80%;
+		height: 1px;
+		background-color: #fff;
+	}
+
+	.fitness .sec-07 .level-list dl {
+		text-align: center;
+		color: #fff;
+	}
+
+	.fitness .sec-07 .level-list dl::before {
+		content: "";
+		position: relative;
+		display: inline-block;
+		margin-bottom: 37px;
+		width: 16px;
+		height: 16px;
+		background-color: #101e51;
+		border: 2px solid #B9C0C6;
+		border-radius: 50%;
+	}
+
+	.fitness .sec-07 .level-list dt {
+		margin-bottom: 12px;
+		font-size: 28px;
+		font-weight: 500;
+		letter-spacing: -0.25px;
+	}
+
+	.fitness .sec-07 .level-list dt::before {
+		content: "STEP " counter(number);
+		counter-increment: number;
+		display: block;
+		margin: 0 auto 24px;
+		padding: 6px 16px;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		font-size: 16px;
+		font-weight: 700;
+		color: #3575F6;
+		letter-spacing: 0;
+		background-color: #fff;
+		border-radius: 20px;
+	}
+
+	.fitness .sec-07 .level-list dl.active dt::before {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #366FF6), to(#3F40F7));
+		background: -webkit-linear-gradient(top, #366FF6 0, #3F40F7 100%);
+		background: linear-gradient(to bottom, #366FF6 0, #3F40F7 100%);
+		color: #fff;
+	}
+
+	.fitness .sec-07 .level-list dd {
+		color: rgba(216, 221, 226, 0.8);
+	}
+
+	.fitness .sec-08 {
+		padding: 120px 0 144px;
+	}
+
+	.fitness .sec-08 .tit-box .sub-txt {
+		margin-bottom: 24px;
+	}
+
+	.fitness .sec-08 .btn-group {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		padding-top: 96px;
+	}
+
+	.fitness .sec-08 .btn-group .btn + .btn {
+		margin-left: 0;
+		margin-top: 24px;
+	}
+
+	.fitness .sec-08 .btn-group .btn {
+		padding: 0 52px 0 64px;
+	}
+}
+.special .sec-kv {
+	padding-top: 48px;
+}
+
+.special .sec-kv .img-box {
+	overflow: hidden;
+	position: relative;
+	height: 424px;
+	border-radius: 24px 24px 0 0;
+}
+
+.special .sec-kv .img-box::before {
+	content: "";
+	display: block;
+	width: 100%;
+	padding-top: 32%;
+}
+
+.special .sec-kv .img-box img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.special .sec-kv .tit-box {
+	overflow: hidden;
+	margin-bottom: 0;
+	padding: 56px 0;
+	background: url("../img/content/special_visual_bg_02.jpg") no-repeat center/cover;
+	border-radius: 0 0 24px 24px;
+}
+
+.special .sec-kv .tit-box .sub-txt {
+	font-weight: 500;
+	color: #141618;
+}
+
+.special .sec-kv .tit-box .btn-l {
+	margin-top: 32px;
+}
+
+.special .sec-01 {
+	padding-top: 40px;
+}
+
+.special .sec-01 .txt-box {
+	letter-spacing: -0.25px;
+	text-align: center;
+}
+
+.special .sec-01 .txt-box .bold {
+	margin-bottom: 12px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+}
+
+.special .sec-01 .txt-box .desc {
+	font-size: 20px;
+	color: #7C828B;
+	line-height: 1.6;
+}
+
 .support .content-box {
 	min-height: 802px;
 }

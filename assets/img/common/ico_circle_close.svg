@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g data-name="그룹 40915" transform="translate(-599.848 -9675.848)"><circle data-name="타원 3099" cx="30" cy="30" r="30" transform="translate(599.848 9675.848)" fill="#fff"/><g fill="none"><path data-name="사각형 25841" d="M617.848 9693.848h24v24h-24z"/><path data-name="선 83" stroke="#2e3337" stroke-linecap="round" stroke-width="2" d="M621.522 9714.174l16.652-16.652"/><path data-name="선 85" stroke="#2e3337" stroke-linecap="round" stroke-width="2" d="M621.522 9697.522l16.652 16.652"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_40915" data-name="그룹 40915" transform="translate(-599.848 -9675.848)">
+    <circle id="타원_3099" data-name="타원 3099" cx="30" cy="30" r="30" transform="translate(599.848 9675.848)" fill="#fff"/>
+    <g id="close" transform="translate(617.848 9693.848)">
+      <rect id="사각형_25841" data-name="사각형 25841" width="24" height="24" fill="none"/>
+      <line id="선_83" data-name="선 83" y1="16.652" x2="16.652" transform="translate(3.674 3.674)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2"/>
+      <line id="선_85" data-name="선 85" x2="16.652" y2="16.652" transform="translate(3.674 3.674)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

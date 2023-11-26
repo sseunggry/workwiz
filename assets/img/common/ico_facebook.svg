@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><g data-name="그룹 40182"><circle data-name="타원 2786" cx="20" cy="20" r="20" fill="none"/><path data-name="패스 117126" d="M21.527 29.851v-8.989h3.016l.452-3.5h-3.468v-2.236c0-1.014.281-1.706 1.735-1.706h1.854v-3.132a24.784 24.784 0 00-2.7-.139c-2.674 0-4.5 1.633-4.5 4.63v2.583h-3.025v3.5h3.025v8.987z" fill="#211d21"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="그룹_40182" data-name="그룹 40182" transform="translate(14030 21367)">
+    <g id="facebook" transform="translate(-14030 -21367)">
+      <circle id="타원_2786" data-name="타원 2786" cx="20" cy="20" r="20" fill="none"/>
+      <path id="패스_117126" data-name="패스 117126" d="M275.548-205.211V-214.2h3.016l.452-3.5h-3.468v-2.236c0-1.014.281-1.706,1.735-1.706h1.854v-3.132a24.784,24.784,0,0,0-2.7-.139c-2.674,0-4.5,1.633-4.5,4.63v2.583h-3.025v3.5h3.025v8.987Z" transform="translate(-254.021 235.062)" fill="#211d21"/>
+    </g>
+  </g>
+</svg>

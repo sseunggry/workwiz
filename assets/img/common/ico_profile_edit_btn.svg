@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path data-name="사각형 27030" fill="none" d="M0 0h20v20H0z"/><path data-name="선 65" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="1.5" d="M8.376 17.5H16.5"/><path data-name="패스 120369" d="M16.551 4.545L5.419 15.676a1.849 1.849 0 01-.635.415l-2.862 1.114 1.114-2.862a1.849 1.849 0 01.415-.635L14.582 2.576a1.394 1.394 0 011.969 0h0a1.394 1.394 0 010 1.969z" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+<svg id="rewrite" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="사각형_27030" data-name="사각형 27030" width="20" height="20" fill="none"/>
+  <line id="선_65" data-name="선 65" x2="8.124" transform="translate(8.376 17.5)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="패스_120369" data-name="패스 120369" d="M-365.085,340.281l-11.132,11.131a1.849,1.849,0,0,1-.635.415l-2.862,1.114,1.114-2.862a1.849,1.849,0,0,1,.415-.635l11.131-11.132a1.394,1.394,0,0,1,1.969,0h0A1.394,1.394,0,0,1-365.085,340.281Z" transform="translate(381.636 -335.736)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+</svg>

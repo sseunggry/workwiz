@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92"><path data-name="사각형 28282" fill="none" d="M0 0h119v92H0z"/><path data-name="사각형 27883" fill="#e7e7e7" d="M18 65.512h82v25H18z"/><path data-name="사각형 27884" fill="#e7e7e7" d="M18 34.512h82v24H18z"/><path data-name="사각형 27885" fill="#e7e7e7" d="M18 2.512h82v25H18z"/><path data-name="패스 121925" d="M112.681 15.495l-35.47 35.47-14.624 5.869a.7.7 0 01-.91-.91l5.87-14.622 35.47-35.471a6.833 6.833 0 019.663 0 6.833 6.833 0 01.001 9.664z" fill="#81a8ff"/><path data-name="패스 121926" d="M93.615 15.233l9.405-9.405a6.833 6.833 0 019.663 0 6.833 6.833 0 010 9.665l-9.404 9.404" fill="#323b7c"/><path d="M27.479 45.319c.3.111 3.526 4.5 3.526 4.5l5.348-6.817" fill="none" stroke="#323b7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path data-name="check" d="M27.479 13.925c.3.111 3.526 4.5 3.526 4.5l5.348-6.817m-8.874 65.317c.3.111 3.526 4.5 3.526 4.5l5.348-6.817" fill="none" stroke="#323b7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92" viewBox="0 0 119 92">
+  <g id="fitness_sec05_ico_02" transform="translate(-645 -6497)">
+    <rect id="사각형_28282" data-name="사각형 28282" width="119" height="92" transform="translate(645 6497)" fill="none"/>
+    <rect id="사각형_27883" data-name="사각형 27883" width="82" height="25" transform="translate(663 6562.512)" fill="#e7e7e7"/>
+    <rect id="사각형_27884" data-name="사각형 27884" width="82" height="24" transform="translate(663 6531.512)" fill="#e7e7e7"/>
+    <rect id="사각형_27885" data-name="사각형 27885" width="82" height="25" transform="translate(663 6499.512)" fill="#e7e7e7"/>
+    <path id="패스_121925" data-name="패스 121925" d="M65.078,13.667H14.915L.425,7.476a.7.7,0,0,1,0-1.287L14.915,0H65.078a6.833,6.833,0,0,1,6.833,6.833h0A6.833,6.833,0,0,1,65.078,13.667Z" transform="translate(702 6548.848) rotate(-45)" fill="#81a8ff"/>
+    <path id="패스_121926" data-name="패스 121926" d="M0,0H13.3a6.833,6.833,0,0,1,6.833,6.833h0A6.833,6.833,0,0,1,13.3,13.667H0" transform="translate(738.615 6512.233) rotate(-45)" fill="#323b7c"/>
+    <path id="check" d="M-10477.937-12977.122c.3.111,3.526,4.5,3.526,4.5l5.348-6.817" transform="translate(11150.416 19519.441)" fill="none" stroke="#323b7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="check-2" data-name="check" d="M-10477.937-12977.122c.3.111,3.526,4.5,3.526,4.5l5.348-6.817" transform="translate(11150.416 19488.047)" fill="none" stroke="#323b7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="check-3" data-name="check" d="M-10477.937-12977.122c.3.111,3.526,4.5,3.526,4.5l5.348-6.817" transform="translate(11150.416 19551.047)" fill="none" stroke="#323b7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

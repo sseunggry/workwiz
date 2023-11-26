@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap bg-white">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">콘텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">채용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents wide special">
+        <section class="sec-kv">
+            <div class="inner">
+                <div class="img-box">
+                    <img src="../assets/img/content/special_visual_bg.jpg" alt="">
+                </div>
+                <div class="tit-box ta-center">
+                    <p class="sub-txt">런앤잡4050은 서울시 거주 <span class="c-blue">이·전직을 희망하는 4050세대</span>를 위한 </span>
+                    <h2 class="tit-l">
+                        서울시 핵심 중장년 원스톱 일자리지원 프로그램입니다.
+                    </h2>
+                    <a href="#!" class="btn btn-l bg-primary">
+                        <span>신청하기</span>
+                        <i class="icon icon-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sec-01">
+            <div class="inner">
+                <div class="txt-box">
+                    <p class="bold">런앤잡4050은</p>
+                    <p class="desc">
+                        중장년 집중지원 프로젝트 서울런4050 사업의 일환으로 서울시 거주 4050퇴직(예정)자들이 <br/>
+                        더 나은 일을 더 오래 할 수 있도록, 채용기업 발굴부터 중장년 채용수요 맞춤 교육과정 개발과 운영, <br/>
+                        <span class="c-black">교육 후 일자리 매칭까지 원스톱으로 재취업</span>을 지원하는 서울시 핵심 중장년 일자리지원 프로그램입니다.
+                    </p>
+                </div>
+
+                <div class="gray-box">
+                    <p>특히 직무역량강화를 위해</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-02">
+            <div class="inner">
+                <div class="tit-box">
+                    <p class="sub-txt en">HOSTORY</p>
+                    <h3 class="tit-l">
+                        런앤잡4050은 <br/>
+                        지속해서 나아갑니다.
+                    </h3>
+                </div>
+                <div class="img-box">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sec-03">
+            <div class="inner">
+                <div class="tit-box">
+                    <p class="sub-txt en">TARGET</p>
+                    <h3 class="tit-l">
+                        런앤잡4050은 <br/>
+                        명확한 목표를 가지고 있습니다.
+                    </h3>
+                </div>
+                <div class="img-box">
+                    <img src="" alt="">
+                </div>
+                <p class="caption">런앤잡4050은</p>
+            </div>
+        </section>
+        <section class="sec-04">
+            <div class="inner">
+                <div class="tit-box">
+                    <p class="sub-txt en">RIVEIW</p>
+                    <h3 class="tit-l">
+                        런앤잡4050의 <br/>
+                        멋진 경험을 확인하세요.
+                    </h3>
+                </div>
+                <div class="info-list">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="tit">1. 런앤잡 450 1차 마케팅 과정</strong>
+                                <p class="desc">4050중장년들에게</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="tit">2. 런앤잡 4050 2차 재무회계 과정</strong>
+                                <p class="desc">과정의 특성이 재무회계이다 보니</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-05">
+            <div class="inner">
+                <div class="tit-box">
+                    <p class="sub-txt en">PROCESS</p>
+                    <h3 class="tit-l">
+                        런앤잡4050의 <br/>
+                        진행 과정을 소개합니다.
+                    </h3>
+                </div>
+                <ul class="step-list">
+                    <li>
+                        <h4 class="tit">기업발굴</h4>
+                        <p class="desc">#40대50대 채용</p>
+                    </li>
+                </ul>
+                <p class="desc">런앤잡 4050은 중장년이</p>
+
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>시간(H)</th>
+                            <th>주제</th>
+                            <th>내용</th>
+                            <th>방식</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="2">기본교육 (마인드셋, 디지털)</th>
+                            <td>3</td>
+                            <td>변화관리 및 커뮤니케이션</td>
+                            <td>변화와 수용과 미래 대비,</td>
+                            <td>강의 및 실습</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- // contents -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
+</div>
+
+</body>
+</html>

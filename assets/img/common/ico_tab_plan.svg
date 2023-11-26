@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="none" d="M0 0h20v20H0z"/><path d="M13.536 2.478a4.167 4.167 0 00-2.883 1.148L10 4.252l-.6-.574a4.18 4.18 0 00-5.766-.052l-.057.052a3.854 3.854 0 000 5.638l6.42 6.209 6.423-6.209a3.854 3.854 0 000-5.635 3.994 3.994 0 00-2.884-1.203z" fill="#ff8686" stroke="#ff5858" stroke-miterlimit="10" stroke-width="1.5"/><path data-name="사각형 26567" fill="#645f5d" d="M4.646 16.664h10.708v2.4H4.646z"/></svg>
+<svg id="생애설계" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="area" width="20" height="20" fill="none"/>
+  <path id="ic-24-operations-favorite" d="M12.559,2.862A4.167,4.167,0,0,0,9.676,4.01l-.653.626-.6-.574A4.18,4.18,0,0,0,2.657,4.01L2.6,4.062A3.854,3.854,0,0,0,2.6,9.7l6.42,6.209L15.443,9.7a3.854,3.854,0,0,0,0-5.635A3.994,3.994,0,0,0,12.559,2.862Z" transform="translate(0.977 -0.384)" fill="#ff8686" stroke="#ff5858" stroke-miterlimit="10" stroke-width="1.5"/>
+  <rect id="사각형_26567" data-name="사각형 26567" width="10.708" height="2.4" transform="translate(4.646 16.664)" fill="#645f5d"/>
+</svg>

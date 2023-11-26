@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g data-name="000 icon/32/컨텐츠/창업창직"><path fill="none" d="M0 0h20v20H0z"/><g data-name="그룹 38606" transform="translate(-2.691 -2.691)"><ellipse data-name="타원 2791" cx="8.846" cy="8.847" rx="8.846" ry="8.847" transform="translate(3.845 3.844)" fill="#f7b010"/><circle data-name="타원 2792" cx="7.39" cy="7.39" transform="translate(5.301 5.301)" fill="#ffc43e" r="7.39"/><text transform="translate(12.69 16.69)" fill="#a76711" font-size="13" font-family="AppleSDGothicNeo-ExtraBold, Apple SD Gothic Neo" font-weight="800"><tspan x="-4.998" y="0">w</tspan></text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="_000_icon_32_컨텐츠_창업창직" data-name="000 icon/32/컨텐츠/창업창직" transform="translate(-136 -426)">
+    <g id="재무생활" transform="translate(136 426)">
+      <rect id="area" width="20" height="20" fill="none"/>
+      <g id="그룹_38606" data-name="그룹 38606" transform="translate(-2.691 -2.691)">
+        <ellipse id="타원_2791" data-name="타원 2791" cx="8.846" cy="8.847" rx="8.846" ry="8.847" transform="translate(3.845 3.844)" fill="#f7b010"/>
+        <ellipse id="타원_2792" data-name="타원 2792" cx="7.39" cy="7.39" rx="7.39" ry="7.39" transform="translate(5.301 5.301)" fill="#ffc43e"/>
+        <text id="w" transform="translate(12.69 16.69)" fill="#a76711" font-size="13" font-family="AppleSDGothicNeo-ExtraBold, Apple SD Gothic Neo" font-weight="800"><tspan x="-4.998" y="0">w</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

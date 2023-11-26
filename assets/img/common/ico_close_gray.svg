@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path data-name="사각형 26653" fill="none" d="M0 0h16v16H0z"/><g data-name="그룹 38696" fill="none" stroke="#7c828b" stroke-linecap="round" stroke-width="1.5"><path data-name="선 52" d="M3.721 12.281l8.558-8.558"/><path data-name="선 53" d="M12.28 12.281L3.72 3.723"/></g></svg>
+<svg id="close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <rect id="사각형_26653" data-name="사각형 26653" width="16" height="16" fill="none"/>
+  <g id="그룹_38696" data-name="그룹 38696" transform="translate(3.721 3.723)">
+    <line id="선_52" data-name="선 52" x2="12.103" transform="translate(0 8.558) rotate(-45)" fill="none" stroke="#7c828b" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="선_53" data-name="선 53" y1="12.103" transform="translate(0 0) rotate(-45)" fill="none" stroke="#7c828b" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

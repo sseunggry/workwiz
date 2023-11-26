@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path data-name="icon area" fill="none" d="M0 0h20v20H0z"/><circle data-name="타원 1" cx="9" cy="9" r="9" transform="rotate(-90 10 9)" fill="#3575f6"/><g data-name="그룹 38435" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"><path data-name="패스 120001" d="M5.57 10.035h8.86"/><path data-name="패스 120002" d="M10 14.464V5.605"/></g></svg>
+<svg id="add-circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="icon_area" data-name="icon area" width="20" height="20" fill="none"/>
+  <circle id="타원_1" data-name="타원 1" cx="9" cy="9" r="9" transform="translate(1 19) rotate(-90)" fill="#3575f6"/>
+  <g id="그룹_38435" data-name="그룹 38435" transform="translate(5.57 10.035) rotate(-45)">
+    <path id="패스_120001" data-name="패스 120001" d="M0,0,6.265,6.264" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_120002" data-name="패스 120002" d="M0,6.264,6.265,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

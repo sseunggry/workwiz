@@ -16,6 +16,7 @@ $(function(){
 		mainContentSwiperFn();
 		mainClassSwiperFn();
 		mainEmploySwiperFn();
+		fitnessReviewSwiperFn();
 	});
 
 	/* 페이지 스크롤 이벤트 */
@@ -49,6 +50,7 @@ $(function(){
 	mainContentSwiperFn();
 	mainClassSwiperFn();
 	mainEmploySwiperFn();
+	fitnessReviewSwiperFn();
 });
 
 function employFilterFn(){
@@ -260,7 +262,7 @@ function closeEditMenu(){
 	$edit.removeClass("active");
 }
 
-let swiperBanner, swiperClass = undefined, swiperContent = undefined;
+let swiperBanner, swiperClass = undefined, swiperContent = undefined, swiperReview = undefined;
 
 function mainBannerSwiperFn(){
 	swiperBanner = new Swiper(".main-banner .swiper", {
@@ -298,6 +300,17 @@ function mainEmploySwiperFn(){
 		pcEmploySwiper();
 	} else{
 		moEmploySwiper();
+	}
+}
+
+function fitnessReviewSwiperFn(){
+	if(windowW <= 960 && swiperClass === undefined){
+		swiperReview = new Swiper(".review-list .swiper", {
+			slidesPerView: "auto",
+		});
+	} else if(windowW > 960  && swiperReview !== undefined) {
+		swiperReview.destroy();
+		swiperReview = undefined;
 	}
 }
 

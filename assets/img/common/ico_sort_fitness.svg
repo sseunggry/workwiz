@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><defs><clipPath id="a"><path data-name="사각형 25623" fill="none" d="M0 0h24v24H0z"/></clipPath></defs><g data-name="ico_sort_fitness"><g data-name="마스크 그룹 76" clip-path="url(#a)"><path data-name="사각형 25247" fill="none" d="M0 0h24v24H0z"/><g data-name="그룹 35432" transform="translate(-2.876 1.47)"><ellipse data-name="타원 2852" cx="8.563" cy="6.631" rx="8.563" ry="6.631" transform="rotate(-38.7 19.305 -6.17)" fill="#3e80ea"/><ellipse data-name="타원 2853" cx="8.563" cy="6.631" rx="8.563" ry="6.631" transform="matrix(.78 -.625 .625 .78 0 10.711)" fill="#d2dff9"/><path data-name="교차 7" d="M12.242 15.885c-2.291-2.858-1.156-7.572 2.533-10.53a10.976 10.976 0 011.694-1.119 5.18 5.18 0 011.011.961c2.278 2.839 1.146 7.532-2.528 10.476a10.93 10.93 0 01-1.741 1.144 5.216 5.216 0 01-.969-.932z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_25623" data-name="사각형 25623" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_sort_fitness" transform="translate(22186 20340)">
+    <g id="ico_sort_fitness-2" data-name="ico_sort_fitness" transform="translate(-22186 -20340)">
+      <g id="마스크_그룹_76" data-name="마스크 그룹 76" clip-path="url(#clip-path)">
+        <rect id="사각형_25247" data-name="사각형 25247" width="24" height="24" fill="none"/>
+        <g id="그룹_35432" data-name="그룹 35432" transform="translate(-2.876 1.47)">
+          <ellipse id="타원_2852" data-name="타원 2852" cx="8.563" cy="6.631" rx="8.563" ry="6.631" transform="matrix(0.78, -0.625, 0.625, 0.78, 8.094, 10.711)" fill="#3e80ea"/>
+          <ellipse id="타원_2853" data-name="타원 2853" cx="8.563" cy="6.631" rx="8.563" ry="6.631" transform="matrix(0.78, -0.625, 0.625, 0.78, 0, 10.711)" fill="#d2dff9"/>
+          <path id="교차_7" data-name="교차 7" d="M1.184,11.649C-1.107,8.791.028,4.077,3.717,1.119A10.976,10.976,0,0,1,5.411,0,5.18,5.18,0,0,1,6.422.961C8.7,3.8,7.568,8.493,3.894,11.437a10.93,10.93,0,0,1-1.741,1.144A5.216,5.216,0,0,1,1.184,11.649Z" transform="translate(11.058 4.236)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

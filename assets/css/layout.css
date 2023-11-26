@@ -1105,6 +1105,10 @@
 		padding-bottom: 0;
 	}
 
+	.contents.wide .inner {
+		padding: 0 6.67vw;
+	}
+
 	.header {
 		height: 16.67vw;
 	}

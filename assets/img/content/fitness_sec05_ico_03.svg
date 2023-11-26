@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92"><path data-name="사각형 28283" fill="none" d="M0 0h119v92H0z"/><g data-name="그룹 41093"><path data-name="사각형 27777" fill="#e7e7e7" d="M18 8h83v83H18z"/><path data-name="합치기 66" d="M59.294 35.441V18.832l8.141 8.908-4.758 7.7zm-3.383 0l-4.757-7.701 8.14-8.908v16.609z" fill="#81a8ff"/><path data-name="합치기 67" d="M59.294 36.821h3.384l4.756 31.291-8.14 12.673zm-8.14 31.291l4.757-31.291h3.383v43.964z" fill="#323b7c"/><path data-name="패스 121747" d="M40.357 8.411l6.261-7.4L71.987.999l3.357 4.521 2.889 2.89-18.824 12.995z" fill="#a4b6d7"/><path data-name="패스 121748" d="M59.295 21.49L47.138 32.178 40.386 8.363l6.232-7.357z" fill="#c0cbde"/><path data-name="패스 121749" d="M59.294 21.49l12.157 10.688 6.753-23.815-6.233-7.357z" fill="#c0cbde"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92" viewBox="0 0 119 92">
+  <g id="fitness_sec05_ico_03" transform="translate(-901 -6497)">
+    <rect id="사각형_28283" data-name="사각형 28283" width="119" height="92" transform="translate(901 6497)" fill="none"/>
+    <g id="그룹_41093" data-name="그룹 41093" transform="translate(-4570 7780.063)">
+      <rect id="사각형_27777" data-name="사각형 27777" width="83" height="83" transform="translate(5489 -1275.063)" fill="#e7e7e7"/>
+      <path id="합치기_66" data-name="합치기 66" d="M8.14,16.609V0l8.141,8.908-4.758,7.7Zm-3.383,0L0,8.908,8.14,0V16.609Z" transform="translate(5522.154 -1264.231)" fill="#81a8ff"/>
+      <path id="합치기_67" data-name="합치기 67" d="M8.14,0h3.384L16.28,31.291,8.14,43.964ZM0,31.291,4.757,0H8.14V43.964Z" transform="translate(5522.154 -1246.242)" fill="#323b7c"/>
+      <path id="패스_121747" data-name="패스 121747" d="M5027.159-1274.652l6.261-7.4,25.369-.012,3.357,4.521,2.889,2.89-18.824,12.995Z" transform="translate(484.198)" fill="#a4b6d7"/>
+      <path id="패스_121748" data-name="패스 121748" d="M5535.285-1261.572l-12.157,10.688-6.752-23.815,6.232-7.357Z" transform="translate(-4.99 -0.001)" fill="#c0cbde"/>
+      <path id="패스_121749" data-name="패스 121749" d="M5516.374-1261.572l12.157,10.688,6.753-23.815-6.233-7.357Z" transform="translate(13.92 -0.001)" fill="#c0cbde"/>
+    </g>
+  </g>
+</svg>

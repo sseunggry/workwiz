@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g data-name="그룹 40914" transform="translate(-599.848 -9675.848)"><circle data-name="타원 3099" cx="30" cy="30" r="30" transform="translate(599.848 9675.848)" fill="#fff"/><path data-name="다각형 5" d="M639.848 9705.848l-17 10v-20z" fill="#2e3337"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_40914" data-name="그룹 40914" transform="translate(-599.848 -9675.848)">
+    <circle id="타원_3099" data-name="타원 3099" cx="30" cy="30" r="30" transform="translate(599.848 9675.848)" fill="#fff"/>
+    <path id="다각형_5" data-name="다각형 5" d="M10,0,20,17H0Z" transform="translate(639.848 9695.848) rotate(90)" fill="#2e3337"/>
+  </g>
+</svg>

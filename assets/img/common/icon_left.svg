@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path data-name="icon area" d="M0 0h20v20H0z" fill="none"/><path data-name="패스 11" d="M8.574 15.476l-5.7-5.7 5.7-5.7" stroke="#2e3337" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" fill="none"/><path data-name="패스 12" d="M17.128 9.772H2.872" stroke="#2e3337" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" fill="none"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path data-name="icon area" style="fill:none" d="M0 0h20v20H0z"/>
+    <path data-name="패스 11" d="m14 4 5.7 5.7-5.7 5.7" transform="rotate(180 11.287 9.738)" style="stroke:#2e3337;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 12" d="M2 12h14.256" transform="rotate(180 9.564 10.886)" style="stroke:#2e3337;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+</svg>

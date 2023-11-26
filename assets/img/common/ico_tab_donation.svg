@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path transform="translate(542 380)" fill="#262626" d="M0 0h20v20H0z"/></clipPath></defs><g data-name="000 icon / 20 / 컨텐츠 / 프로보노" transform="translate(-542 -380)" clip-path="url(#a)"><path data-name="area" fill="none" d="M542 380h20v20h-20z"/><g data-name="그룹 38670"><path data-name="패스 120036" d="M555.137 393.139v-5.6a6.064 6.064 0 10-5.6 5.6z" fill="#ff5858" style="isolation:isolate"/><path data-name="패스 120037" d="M548.864 386.866v5.6a6.065 6.065 0 105.6-5.6z" fill="#ffc43e" style="isolation:isolate"/><path data-name="패스 120038" d="M552.217 386.838v5.823h2.923v-5.825z" fill="#ff5858" style="isolation:isolate"/></g></g></svg>
+<svg id="프로보노" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="area" width="20" height="20" transform="translate(542 380)" fill="#262626"/>
+    </clipPath>
+  </defs>
+  <g id="_000_icon_20_컨텐츠_프로보노" data-name="000 icon / 20 / 컨텐츠 / 프로보노" transform="translate(-542 -380)" clip-path="url(#clip-path)">
+    <rect id="area-2" data-name="area" width="20" height="20" transform="translate(542 380)" fill="none"/>
+    <g id="그룹_38670" data-name="그룹 38670" transform="translate(490.679 -459.613) rotate(45)">
+      <path id="패스_120036" data-name="패스 120036" d="M648.565,557.408l-3.96-3.96a6.064,6.064,0,1,0,0,7.92Z" transform="translate(0)" fill="#ff5858" style="isolation: isolate"/>
+      <path id="패스_120037" data-name="패스 120037" d="M685.553,557.408l3.96,3.96a6.065,6.065,0,1,0,0-7.92Z" transform="translate(-45.859)" fill="#ffc43e" style="isolation: isolate"/>
+      <path id="패스_120038" data-name="패스 120038" d="M706.671,567.839l4.118,4.118,2.067-2.067-4.119-4.119Z" transform="translate(-64.626 -12.822)" fill="#ff5858" style="isolation: isolate"/>
+    </g>
+  </g>
+</svg>

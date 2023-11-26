@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="none" d="M0 0h20v20H0z"/><circle data-name="타원 2906" cx="4" cy="4" r="4" transform="translate(6 4)" fill="#a6aebf"/><path data-name="사각형 26645" fill="#545d71" d="M5 8h10v2H5z"/><path data-name="사각형 26644" fill="#a6aebf" d="M2 10h16v9H2z"/><path data-name="다각형 1" d="M12.5 2.5L9.5 4V1z" fill="#3675f6"/><g data-name="그룹 38671" fill="#545d71"><path data-name="사각형 26646" d="M7.5 13h2v6h-2z"/><path data-name="사각형 26647" d="M10.5 13h2v6h-2z"/></g></svg>
+<svg id="사회혁신지원" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="area" width="20" height="20" fill="none"/>
+  <circle id="타원_2906" data-name="타원 2906" cx="4" cy="4" r="4" transform="translate(6 4)" fill="#a6aebf"/>
+  <rect id="사각형_26645" data-name="사각형 26645" width="10" height="2" transform="translate(5 8)" fill="#545d71"/>
+  <rect id="사각형_26644" data-name="사각형 26644" width="16" height="9" transform="translate(2 10)" fill="#a6aebf"/>
+  <path id="다각형_1" data-name="다각형 1" d="M1.5,0,3,3H0Z" transform="translate(12.5 1) rotate(90)" fill="#3675f6"/>
+  <g id="그룹_38671" data-name="그룹 38671" transform="translate(-569.5 -380)">
+    <rect id="사각형_26646" data-name="사각형 26646" width="2" height="6" transform="translate(577 393)" fill="#545d71"/>
+    <rect id="사각형_26647" data-name="사각형 26647" width="2" height="6" transform="translate(580 393)" fill="#545d71"/>
+  </g>
+</svg>

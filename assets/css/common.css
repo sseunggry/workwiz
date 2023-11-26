@@ -830,9 +830,17 @@ body.popView {
 	color: #141618;
 }
 
+.btn.line.c-white .icon {
+	background-color: #fff;
+}
+
 .btn.line.c-primary {
 	border-color: #3575F6;
 	color: #3575F6;
+}
+
+.btn.line.c-primary .icon {
+	background-color: #3575F6;
 }
 
 .btn-l.square {
@@ -856,6 +864,10 @@ body.popView {
 	font-weight: 500;
 	line-height: 1.5;
 	color: #3575F6;
+}
+
+.btn.text .icon {
+	background-color: #3575F6;
 }
 
 .btn.text-m {

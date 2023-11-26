@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92"><path data-name="사각형 28284" fill="none" d="M0 0h119v92H0z"/><g data-name="그룹 41242" transform="translate(-1158 -6557.941)"><path data-name="사각형 27886" fill="#e7e7e7" d="M1186 6573.941h61v76h-61z"/><path data-name="패스 121928" d="M1216.533 6582h6.13l10.144-23.571h-6.13z" fill="#323b7c"/><path data-name="사각형 27887" fill="#81a8ff" d="M1186 6573.941h61v16h-61z"/><path data-name="패스 121927" d="M1216.768 6582h-6.13l-10.144-23.571h6.13z" fill="#323b7c"/><circle data-name="타원 3191" cx="7.867" cy="7.867" transform="translate(1208.901 6601.412)" fill="#323b7c" r="7.867"/><path data-name="사각형 27888" d="M1212.157 6619.393h9.221a10 10 0 0110 10v2.734a3 3 0 01-3 3h-23.221a3 3 0 01-3-3v-2.734a10 10 0 0110-10z" fill="#323b7c"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="92" viewBox="0 0 119 92">
+  <g id="fitness_sec05_ico_04" transform="translate(-1157 -6497)">
+    <rect id="사각형_28284" data-name="사각형 28284" width="119" height="92" transform="translate(1157 6497)" fill="none"/>
+    <g id="그룹_41242" data-name="그룹 41242" transform="translate(-1 -60.941)">
+      <rect id="사각형_27886" data-name="사각형 27886" width="61" height="76" transform="translate(1186 6573.941)" fill="#e7e7e7"/>
+      <path id="패스_121928" data-name="패스 121928" d="M16.274,0h-6.13L0,23.571H6.13Z" transform="translate(1232.807 6582) rotate(180)" fill="#323b7c"/>
+      <rect id="사각형_27887" data-name="사각형 27887" width="61" height="16" transform="translate(1186 6573.941)" fill="#81a8ff"/>
+      <path id="패스_121927" data-name="패스 121927" d="M0,0H6.13L16.274,23.571h-6.13Z" transform="translate(1216.768 6582) rotate(180)" fill="#323b7c"/>
+      <ellipse id="타원_3191" data-name="타원 3191" cx="7.867" cy="7.867" rx="7.867" ry="7.867" transform="translate(1208.901 6601.412)" fill="#323b7c"/>
+      <path id="사각형_27888" data-name="사각형 27888" d="M10,0h9.221a10,10,0,0,1,10,10v2.734a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V10A10,10,0,0,1,10,0Z" transform="translate(1202.157 6619.393)" fill="#323b7c"/>
+    </g>
+  </g>
+</svg>

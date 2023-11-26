@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="none" d="M0 0h20v20H0z"/><path data-name="사각형 26569" d="M7 2h7a3 3 0 013 3v13H7V2z" fill="#627dba"/><path data-name="사각형 26570" fill="#645f5d" d="M3 2h3v16H3z"/><path data-name="패스 120004" d="M15.201 1.51v6.566s-1.824-1.055-1.845-1.052-1.955 1.052-1.955 1.052V1.51z" fill="#b6cbf5"/></svg>
+<svg id="학습" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="area" width="20" height="20" fill="none"/>
+  <path id="사각형_26569" data-name="사각형 26569" d="M0,0H7a3,3,0,0,1,3,3V16a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(7 2)" fill="#627dba"/>
+  <rect id="사각형_26570" data-name="사각형 26570" width="3" height="16" transform="translate(3 2)" fill="#645f5d"/>
+  <path id="패스_120004" data-name="패스 120004" d="M0,0H6.566S5.511,1.824,5.514,1.845,6.566,3.8,6.566,3.8H0Z" transform="translate(15.201 1.51) rotate(90)" fill="#b6cbf5"/>
+</svg>

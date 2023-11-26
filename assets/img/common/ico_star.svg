@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="사각형 26961" fill="none" d="M0 0h24v24H0z"/><path data-name="패스 117226" d="M20.642 11.855s-8.454.522-8.454 8.89c0-8.368-8.455-8.89-8.455-8.89s8.455-.6 8.455-8.973c0 8.368 8.454 8.973 8.454 8.973" fill="#d2dff9"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_star" transform="translate(-526 -7874.374)">
+    <rect id="사각형_26961" data-name="사각형 26961" width="24" height="24" transform="translate(526 7874.374)" fill="none"/>
+    <path id="패스_117226" data-name="패스 117226" d="M-1959.233,354.756s-8.454.522-8.454,8.89c0-8.368-8.455-8.89-8.455-8.89h0s8.455-.6,8.455-8.973c0,8.368,8.454,8.973,8.454,8.973" transform="translate(2505.875 7531.473)" fill="#d2dff9"/>
+  </g>
+</svg>

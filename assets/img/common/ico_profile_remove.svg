@@ -1,1 +1,10 @@
-<svg data-name="add, remove" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="사각형 26653" fill="none" d="M0 0h24v24H0z"/><g data-name="사각형 26652" fill="#fff" stroke="#ea463d" stroke-width="1.5"><rect width="24" height="24" rx="12" stroke="none"/><rect x=".75" y=".75" width="22.5" height="22.5" rx="11.25" fill="none"/></g><path data-name="선 52" fill="none" stroke="#ea463d" stroke-linecap="round" stroke-width="1.5" d="M7 12h10"/></svg>
+<svg id="add_remove" data-name="add, remove" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="remove">
+    <rect id="사각형_26653" data-name="사각형 26653" width="24" height="24" fill="none"/>
+    <g id="사각형_26652" data-name="사각형 26652" fill="#fff" stroke="#ea463d" stroke-width="1.5">
+      <rect width="24" height="24" rx="12" stroke="none"/>
+      <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" fill="none"/>
+    </g>
+    <line id="선_52" data-name="선 52" x2="10" transform="translate(7 12)" fill="none" stroke="#ea463d" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

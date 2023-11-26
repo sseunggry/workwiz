@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><g transform="translate(-1078 -2154)"><rect data-name="사각형 27724" width="28" height="28" rx="6" transform="translate(1078 2154)" fill="#3675f6"/><path d="M1087.2 2166.194l4.8-4.9 4.8 4.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path data-name="ic-16-navigations-chevron-down" d="M1092.032 2161.448v14.158" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g transform="translate(-1078 -2154)">
+        <rect data-name="사각형 27724" width="28" height="28" rx="6" transform="translate(1078 2154)" style="fill:#3675f6"/>
+        <path d="M9.6 0 4.8 4.9 0 0" transform="rotate(180 548.4 1083.097)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+        <path data-name="ic-16-navigations-chevron-down" d="M0 14.158V0" transform="rotate(180 546.016 1087.803)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+    </g>
+</svg>
