@@ -1,5 +1,1 @@
-<svg id="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <rect id="사각형_25841" data-name="사각형 25841" width="24" height="24" fill="none"/>
-  <line id="선_83" data-name="선 83" y1="16.652" x2="16.652" transform="translate(3.674 3.674)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2"/>
-  <line id="선_85" data-name="선 85" x2="16.652" y2="16.652" transform="translate(3.674 3.674)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="사각형 25841" fill="none" d="M0 0h24v24H0z"/><path data-name="선 83" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2" d="M3.674 20.326L20.326 3.674"/><path data-name="선 85" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-width="2" d="M3.674 3.674l16.652 16.652"/></svg>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/mypage.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/datepicker.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title></title>
+
+</head>
+<body>
+<div class="wrap bg-white">
+    <!-- header -->
+<div class="header">
+    <div class="inner">
+        <div class="header-menu">
+            <h1><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></h1>
+            <div class="mob-menu">
+                <div class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+                </div>
+                <button type="button" class="mob-btn" onclick="mobNavActiveFn('A');"><img src="../assets/img/common/ico_menu.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="header-con">
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="gnb-list">
+                    <li class="active"><a href="#">콘텐츠</a></li>
+                    <li><a href="#">프로그램</a></li>
+                    <li><a href="#">채용관</a></li>
+                    <li><a href="#">클래스</a></li>
+                    <li><a href="#">커리어피트니스</a></li>
+                </ul>
+            </nav>
+            <!-- // nav -->
+
+            <!-- header_util -->
+            <div class="header-util">
+                <p class="mypage">
+                    <a href="#" class="login-btn">로그인</a>
+<!--                    <a href="#" class="mypage-btn">마이페이지</a>-->
+                </p>
+                <ul class="service-list">
+                   <li><a href="#">서비스 소개</a></li>
+                   <li><a href="#">재취업지원서비스</a></li>
+                </ul>
+            </div>
+            <!-- // header_util -->
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+<!-- mob-nav -->
+<div class="mob-nav">
+    <div class="header-menu">
+        <p class="logo"><a href="#"><img src="../assets/img/common/logo.png" alt=""></a></p>
+        <div class="mob-menu">
+            <div class="mypage">
+                <a href="#" class="login-btn">로그인</a>
+                <!-- <a href="#" class="mypage-btn"><img src="../assets/img/common/ico_mypage.svg" alt=""></a>-->
+            </div>
+            <button type="button" class="close-btn" onclick="mobNavActiveFn('C')"><img src="../assets/img/common/ico_close.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="nav-list">
+        <ul class="gnb-list">
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채용관</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커리어피트니스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">재취업지원서비스</a></li>
+        </ul>
+        <ul class="gnb-list">
+            <li><a href="#">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+<!--// mob-nav -->
+
+    <!-- contents -->
+    <div class="contents wide reemploy-service">
+        <section class="sec-kv">
+            <div class="inner">
+                <div class="txt-box">
+                    <p class="sub-txt">상상우리와 함께합니다.</p>
+                    <h2 class="tit">재취업지원서비스</h2>
+                    <a href="#!" class="btn btn-l bg-primary">
+                        <span>재취업지원서비스 신청하기</span>
+                        <i class="icon icon-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sec-01">
+            <div class="inner">
+                <div class="tit-box">
+                    <h3 class="tit-m">
+                        재취업지원서비스 안내
+                    </h3>
+                </div>
+                <p class="desc">
+                    사업주의 지원 하에 정년이나 경영상의 이유로 비자발적으로 퇴직하거나 퇴직예정인 근로자를 대상으로
+                    퇴직으로 인한 충격을 원만하게 극복하고 퇴직자가 원하는 경력목표 (재취업 또는 창업)을
+                    가장 효과적으로 달성할 수 있도록 지원해 주는 일체의 활동을 의미합니다.
+                </p>
+            </div>
+        </section>
+        <section class="sec-02">
+            <div class="inner">
+                <div class="tit-box ta-center">
+                    <h3 class="tit-m">
+                        재취업지원서비스 의무화
+                    </h3>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>진로설계</dt>
+                        <dd>
+                            16시간 이상
+                            교육과 상담 제공,
+                            개인별 진로설계서 작성
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>취업알선</dt>
+                        <dd>
+                            이직전 3개월 이내
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>취창업 교육</dt>
+                        <dd>
+                            2일 이상, 16시간 이상의 집체/
+                        </dd>
+                    </dl>
+                </div>
+                <p class="desc">
+                    2019년 4월 국회 본회의에서 「고용정책기본법」「고용상 연령차별금지 및 고령자고용촉진에 관한 법률」 등
+                    고용노동부 소관 3개의 법률안이 의결 되었습니다. 이에 따라 2020년 5월부터 1,000인 이상의 노동자를 고용한 기업은
+                    재취업지원서비스를 제공해야 합니다. 정년퇴직, 희망퇴직 등 비자발적으로 퇴직하는 50세 이상 근로자는
+                    재취업지원서비스를 통해 다음 중 하나를 의무적으로 제공받게 됩니다.
+                </p>
+            </div>
+        </section>
+        <section class="sec-03">
+            <div class="inner">
+                <div class="tit-box">
+                    <h3 class="tit-l">
+                        재취업지원서비스 <br/>
+                        <span class="c-blue2">지원 기업</span> 대상 확대
+                    </h3>
+                    <p class="desc">
+                        재취업지원서비스 지원은  <br/>
+                        기존 1,000인 이상 의무 대상 기업뿐만 아니라  <br/>
+                        300인 이상 999인 이하 중소·중견기업이 <br/>
+                        참여할 수 있도록 확대되었습니다.
+                    </p>
+                </div>
+                <ul class="box-list">
+                    <li>
+                        <div class="txt-box">
+                            <p class="sub-txt">1,000인 이상</p>
+                            <p class="tit">의무 대상 기업</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt-box">
+                            <p class="sub-txt">재취업지원서비스 도입을 원하는</p>
+                            <p class="tit">300~999인 기업</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec-04">
+            <div class="inner">
+                <div class="service-con">
+                    <div class="tit-box ta-center">
+                        <h3 class="tit-l">
+                            이러한 서비스들을 제공합니다.
+                        </h3>
+                    </div>
+                    <div class="box-list">
+                        <dl>
+                            <dt>맞춤 교육 프로그램</dt>
+                            <dd>
+                                기업의 산업, 인력 특성에 맞는 맞춤
+                                교육프로그램을 기획해 드립니다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>클래스 무료 제공</dt>
+                            <dd>
+                                워크위즈의 모든 유료 클래스를
+                                무료로 제공해 드립니다.
+                            </dd>
+                            <dd>
+                                <small>
+                                    (연간 30만원 이상 상당)
+                                </small>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>최고의 강사진</dt>
+                            <dd>
+                                검증된 최고의 강사진들이
+                                여러분을 위해 준비중입니다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>우선 참여 기회</dt>
+                            <dd>
+                                워크위즈에 서 진행하는
+                                이벤트 및 자체 프로그램에
+                                우선 참여 가능합니다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>프로그램 우선 선발권</dt>
+                            <dd>
+                                워크위즈 프로그램
+                                우선 선발권을 제공해 드립니다.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>행정처리 대행</dt>
+                            <dd>
+                                법률로 정한 재취업지원서비스에
+                                따른 모든 행정처리를
+                                대행해 드립니다.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="#!" class="btn btn-l bg-primary">
+                        <span>재취업지원서비스 신청하기</span>
+                        <i class="icon icon-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- // contents -->
+
+    <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <div class="footer-menu">
+            <p class="footer-logo">(주)상상우리 <span>대표이사:신철호</span></p>
+            <ul>
+                <li><a href="#">상상우리 홈페이지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="contact-con">
+            <div class="info-con">
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>workwiz@sangsangwoori.com</dd>
+                </dl>
+                <dl>
+                    <dt>전화</dt>
+                    <dd>02-1234-1234</dd>
+                </dl>
+            </div>
+            <div class="familysite">
+                <div class="inp-select pc_only">
+                    <button class="inp-btn">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                    <ul class="inp-options only-link">
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                        <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                    </ul>
+                </div>
+                <div class="inp-select mo_only">
+                    <button class="inp-btn" onclick="popupOpenFn('pop-familysite')">
+                        <span class="value">패밀리 사이트 바로가기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="address-con">
+            <p class="copy">© 2020 Workwiz</p>
+            <address>
+                <div>
+                    <p>사업자등록번호 : 117-81-84651</p>
+                    <p>통신판매업 신고번호 : 제2020-서울용산-0406호</p>
+                    <p>직업정보제공사업 신고번호 : 서울서부 제2020-03호</p>
+                </div>
+                <div>
+                    <p>유료직업소개사업 등록번호 : 제2019-3020150-14-5-00001호</p>
+                    <p>개인정보책임자 : 신철호</p>
+                    <p>서울특별시 용산구 한강대로 372 KDB생명타워 30츨</p>
+                </div>
+            </address>
+            <ul class="terms-list">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <ul class="share-list">
+                <li><a href="#"><img src="../assets/img/common/ico_facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/common/ico_blog.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+
+<!-- pop content -->
+<div class="pop-wrap select-pop" data-pop="pop-familysite">
+    <div class="pop-inner">
+        <div class="inp-options">
+            <ul class="inp-options-list">
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+                <li class="option"><a href="http://www.naver.com" target="_blank">패밀리</a></li>
+            </ul>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn full btn-l square" onclick="popupCloseFn('pop-familysite')">취소</button>
+        </div>
+    </div>
+</div>
+<!-- //pop content -->
+</div>
+
+</body>
+</html>

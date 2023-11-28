@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path data-name="icon area" style="fill:none" d="M0 0h24v24H0z"/>
-    <path d="m16.816 8-7.208 7.509L2.4 8" transform="translate(2.391 .246)" style="stroke:#2e3337;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="icon area" d="M0 0h24v24H0z" fill="none"/><path d="M19.207 8.246l-7.208 7.509-7.208-7.509" stroke="#2e3337" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" fill="none"/></svg>

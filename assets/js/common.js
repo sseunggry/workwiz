@@ -304,11 +304,11 @@ function mainEmploySwiperFn(){
 }
 
 function fitnessReviewSwiperFn(){
-	if(windowW <= 960 && swiperClass === undefined){
+	if(windowW <= 1200 && swiperReview === undefined){
 		swiperReview = new Swiper(".review-list .swiper", {
 			slidesPerView: "auto",
 		});
-	} else if(windowW > 960  && swiperReview !== undefined) {
+	} else if(windowW > 1200  && swiperReview !== undefined) {
 		swiperReview.destroy();
 		swiperReview = undefined;
 	}

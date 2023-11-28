@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-    <defs>
-        <clipPath id="7xm76ko8xa">
-            <path data-name="사각형 26660" transform="translate(0 .207)" style="fill:none" d="M0 0h20v20H0z"/>
-        </clipPath>
-    </defs>
-    <g data-name="마스크 그룹 33418" transform="translate(0 -.208)" style="clip-path:url(#7xm76ko8xa)">
-        <path data-name="사각형 26655" transform="translate(0 .207)" style="fill:none" d="M0 0h20v20H0z"/>
-        <path data-name="선 54" transform="rotate(-45 9.201 -.653)" style="stroke:#2e3337;stroke-linecap:round;stroke-width:1.5px;fill:none" d="m0 0 9.824 9.824"/>
-        <path data-name="선 55" transform="rotate(-45 18.349 3.136)" style="stroke:#2e3337;stroke-linecap:round;stroke-width:1.5px;fill:none" d="m0 0 9.824 9.824"/>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path data-name="사각형 26660" transform="translate(0 .207)" d="M0 0h20v20H0z" fill="none"/></clipPath></defs><g data-name="마스크 그룹 33418" transform="translate(0 -.208)" clip-path="url(#a)" fill="none"><path data-name="사각형 26655" d="M0 .207h20v20H0z"/><path data-name="선 54" d="M3.157 6.315H17.05" stroke="#2e3337" stroke-linecap="round" stroke-width="1.5"/><path data-name="선 55" d="M3.157 13.893H17.05" stroke="#2e3337" stroke-linecap="round" stroke-width="1.5"/></g></svg>

@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-  <g id="ic_check_blue" transform="translate(-570 -9311)">
-    <rect id="사각형_27804" data-name="사각형 27804" width="28" height="28" rx="14" transform="translate(570 9311)" fill="#f0f6ff"/>
-    <g id="그룹_41133" data-name="그룹 41133" transform="translate(18 1577)">
-      <rect id="사각형_26698" data-name="사각형 26698" width="20" height="20" transform="translate(556 7738)" fill="none"/>
-      <path id="패스_117149" data-name="패스 117149" d="M-10477.939-12976.3c.4.151,4.686,6.081,4.686,6.081l7.106-9.22" transform="translate(11038.032 20722.822)" fill="none" stroke="#7897d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><g transform="translate(-570 -9311)"><rect data-name="사각형 27804" width="28" height="28" rx="14" transform="translate(570 9311)" fill="#f0f6ff"/><g data-name="그룹 41133" fill="none"><path data-name="사각형 26698" d="M574 9315h20v20h-20z"/><path data-name="패스 117149" d="M578.093 9323.522c.4.151 4.686 6.081 4.686 6.081l7.106-9.22" stroke="#7897d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></g></g></svg>

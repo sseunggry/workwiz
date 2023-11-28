@@ -1,6 +1,1 @@
-<svg id="info" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <rect id="사각형_27286" data-name="사각형 27286" width="16" height="16" fill="none"/>
-  <circle id="타원_3019" data-name="타원 3019" cx="7" cy="7" r="7" transform="translate(1 1)" fill="#2e3337"/>
-  <line id="선_93" data-name="선 93" y2="4" transform="translate(8 4.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
-  <line id="선_94" data-name="선 94" transform="translate(8 11.25)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path data-name="사각형 27286" fill="none" d="M0 0h16v16H0z"/><circle data-name="타원 3019" cx="7" cy="7" r="7" transform="translate(1 1)" fill="#2e3337"/><path data-name="선 93" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M8 4.75v4"/><path data-name="선 94" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M8 11.25h0"/></svg>

@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="92" viewBox="0 0 120 92">
-  <g id="fitness_sec05_ico_01" transform="translate(-388 -6497)">
-    <rect id="사각형_28281" data-name="사각형 28281" width="120" height="92" transform="translate(388 6497)" fill="none"/>
-    <g id="그룹_41240" data-name="그룹 41240" transform="translate(45.622 35.816)">
-      <rect id="사각형_27877" data-name="사각형 27877" width="80.756" height="56.634" transform="translate(362 6478.877)" fill="#e7e7e7"/>
-      <rect id="사각형_27878" data-name="사각형 27878" width="7.575" height="26.815" transform="translate(375.644 6498.569)" fill="#c0cbde"/>
-      <rect id="사각형_27879" data-name="사각형 27879" width="7.575" height="37.005" transform="translate(390.793 6488.379)" fill="#a4b6d7"/>
-      <rect id="사각형_27880" data-name="사각형 27880" width="7.575" height="26.815" transform="translate(405.944 6498.569)" fill="#c0cbde"/>
-      <rect id="사각형_27881" data-name="사각형 27881" width="7.575" height="37.005" transform="translate(421.093 6488.379)" fill="#323b7c"/>
-      <rect id="사각형_27882" data-name="사각형 27882" width="80.756" height="14.683" transform="translate(362 6464.194)" fill="#81a8ff"/>
-      <path id="패스_121923" data-name="패스 121923" d="M0,0H5.877L15.6,14.487H9.724Z" transform="translate(402.156 6535.488)" fill="#323b7c"/>
-      <path id="패스_121924" data-name="패스 121924" d="M15.6,0H9.724L0,14.487H5.877Z" transform="translate(386.78 6535.488)" fill="#323b7c"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="92"><path data-name="사각형 28281" fill="none" d="M0 0h120v92H0z"/><g data-name="그룹 41240"><path data-name="사각형 27877" fill="#e7e7e7" d="M19.622 17.693h80.756v56.634H19.622z"/><path data-name="사각형 27878" fill="#c0cbde" d="M33.266 37.385h7.575V64.2h-7.575z"/><path data-name="사각형 27879" fill="#a4b6d7" d="M48.415 27.195h7.575V64.2h-7.575z"/><path data-name="사각형 27880" fill="#c0cbde" d="M63.566 37.385h7.575V64.2h-7.575z"/><path data-name="사각형 27881" fill="#323b7c" d="M78.715 27.195h7.575V64.2h-7.575z"/><path data-name="사각형 27882" fill="#81a8ff" d="M19.622 3.01h80.756v14.683H19.622z"/><path data-name="패스 121923" d="M59.778 74.304h5.877l9.723 14.487h-5.876z" fill="#323b7c"/><path data-name="패스 121924" d="M60.002 74.304h-5.876l-9.724 14.487h5.877z" fill="#323b7c"/></g></svg>

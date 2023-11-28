@@ -1,8 +1,1 @@
-<svg id="기타" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <rect id="area" width="20" height="20" fill="none"/>
-  <g id="그룹_40371" data-name="그룹 40371" transform="translate(-922.5 -532.5)">
-    <rect id="사각형_27398" data-name="사각형 27398" width="3" height="3" rx="1.5" transform="translate(931 541)" fill="#545d71"/>
-    <rect id="사각형_27399" data-name="사각형 27399" width="3" height="3" rx="1.5" transform="translate(925 541)" fill="#a6aebf"/>
-    <rect id="사각형_27400" data-name="사각형 27400" width="3" height="3" rx="1.5" transform="translate(937 541)" fill="#1f273b"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="none" d="M0 0h20v20H0z"/><g data-name="그룹 40371" transform="translate(-922.5 -532.5)"><rect data-name="사각형 27398" width="3" height="3" rx="1.5" transform="translate(931 541)" fill="#545d71"/><rect data-name="사각형 27399" width="3" height="3" rx="1.5" transform="translate(925 541)" fill="#a6aebf"/><rect data-name="사각형 27400" width="3" height="3" rx="1.5" transform="translate(937 541)" fill="#1f273b"/></g></svg>

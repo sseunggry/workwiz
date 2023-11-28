@@ -798,6 +798,27 @@
 		background: #F4F5F8;
 	}
 
+	.wrap.bg-transparent {
+		padding-top: 0;
+	}
+
+	.wrap.bg-transparent .header {
+		background: rgba(0, 0, 0, 0.15);
+	}
+
+	.wrap.bg-transparent .header .header-menu .pc_only {
+		display: none;
+	}
+
+	.wrap.bg-transparent .header .header-menu .mo_only {
+		display: block;
+	}
+
+	.wrap.bg-transparent .header .header-menu .mob-menu .login-btn {
+		color: #fff;
+		border-color: #fff;
+	}
+
 	.content-box, .content-box.pd-l, .content-box.pd-m, .content-box.pd-s {
 		padding: 0;
 		-webkit-box-shadow: none;

@@ -1,5 +1,1 @@
-<svg id="ico_special" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <rect id="area" width="20" height="20" fill="none"/>
-  <rect id="사각형_27167" data-name="사각형 27167" width="18" height="18" rx="9" transform="translate(1 1)" fill="#3675f6"/>
-  <path id="패스_117226" data-name="패스 117226" d="M-1960.312,353.735s-7.915.463-7.915,7.879c0-7.417-7.915-7.879-7.915-7.879h0s7.915-.536,7.915-7.952c0,7.417,7.915,7.952,7.915,7.952" transform="translate(1978.227 -343.699)" fill="#fff"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="none" d="M0 0h20v20H0z"/><rect data-name="사각형 27167" width="18" height="18" rx="9" transform="translate(1 1)" fill="#3675f6"/><path data-name="패스 117226" d="M17.915 10.036S10 10.499 10 17.915c0-7.417-7.915-7.879-7.915-7.879S10 9.5 10 2.084c0 7.417 7.915 7.952 7.915 7.952" fill="#fff"/></svg>

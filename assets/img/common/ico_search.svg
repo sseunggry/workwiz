@@ -1,8 +1,1 @@
-<svg id="search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <rect id="사각형_26183" data-name="사각형 26183" width="20" height="20" fill="none"/>
-  <g id="타원_2876" data-name="타원 2876" transform="translate(1.25 1.25)" fill="none" stroke="#7c828b" stroke-width="1.5">
-    <circle cx="7" cy="7" r="7" stroke="none"/>
-    <circle cx="7" cy="7" r="6.25" fill="none"/>
-  </g>
-  <line id="선_32" data-name="선 32" x2="4.75" y2="4.75" transform="translate(12.75 12.75)" fill="none" stroke="#7c828b" stroke-linecap="round" stroke-width="1.5"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path data-name="사각형 26183" fill="none" d="M0 0h20v20H0z"/><g data-name="타원 2876" transform="translate(1.25 1.25)" fill="none" stroke="#7c828b" stroke-width="1.5"><circle cx="7" cy="7" r="7" stroke="none"/><circle cx="7" cy="7" r="6.25"/></g><path data-name="선 32" fill="none" stroke="#7c828b" stroke-linecap="round" stroke-width="1.5" d="M12.75 12.75l4.75 4.75"/></svg>

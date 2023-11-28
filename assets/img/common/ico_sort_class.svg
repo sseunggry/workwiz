@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="ico_sort_class" transform="translate(22106 20345)">
-    <g id="클래스" transform="translate(-22106 -20345)">
-      <rect id="사각형_25247" data-name="사각형 25247" width="24" height="24" fill="none"/>
-      <path id="사각형_25248" data-name="사각형 25248" d="M0,0H6A3,3,0,0,1,9,3V16a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(2 4)" fill="#3e80ea"/>
-      <path id="사각형_25249" data-name="사각형 25249" d="M3,0H9A0,0,0,0,1,9,0V16a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(13 4)" fill="#d2dff9"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="사각형 25247" fill="none" d="M0 0h24v24H0z"/><path data-name="사각형 25248" d="M2 4h6a3 3 0 013 3v13H2V4z" fill="#3e80ea"/><path data-name="사각형 25249" d="M16 4h6v16h-9V7a3 3 0 013-3z" fill="#d2dff9"/></svg>

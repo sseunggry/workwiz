@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-  <g id="ico_circle_left" transform="translate(-314 -1681)">
-    <rect id="area" width="36" height="36" rx="18" transform="translate(314 1681)" fill="#f4f5f8"/>
-    <g id="chevron-left" transform="translate(322 1689)">
-      <rect id="icon_area" data-name="icon area" width="20" height="20" fill="none"/>
-      <path id="ic-16-navigations-chevron-down" d="M15.2,8,8.8,14.667,2.4,8" transform="translate(20.334 1.2) rotate(90)" fill="none" stroke="#2e3337" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><g transform="translate(-314 -1681)"><rect width="36" height="36" rx="18" transform="translate(314 1681)" fill="#f4f5f8"/><g fill="none"><path data-name="icon area" d="M322 1689h20v20h-20z"/><path d="M334.334 1705.4l-6.667-6.4 6.667-6.4" stroke="#2e3337" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/></g></g></svg>
